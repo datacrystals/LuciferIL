@@ -13,6 +13,7 @@
 #include <NeoIL/NeoIL.h>
 #include <NeoIL/NeoIL_STBLoadImage.h>
 #include <NeoIL/NeoIL_FreeImageLoadImage.h>
+#include <NeoIL/NeoIL_EnumToString.h>
 
 
 struct ImageFileObject {
