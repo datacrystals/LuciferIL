@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DNeoIL_EXPORTS
 
-CXX_INCLUDES = -I/home/tliao/Documents/NeoIL/NeoIL/Third-Party/stb -I/home/tliao/Documents/NeoIL/NeoIL -I/home/tliao/Documents/NeoIL/NeoIL/NeoIL -I/home/tliao/Documents/NeoIL/NeoIL/Third-Party/FreeImage/FreeImage/Source
+CXX_INCLUDES = -I/home/tliao/Documents/NeoIL/NeoIL -I/home/tliao/Documents/NeoIL/NeoIL/NeoIL -I/home/tliao/Documents/NeoIL/NeoIL/Third-Party/stb -I/home/tliao/Documents/NeoIL/NeoIL/Third-Party/FreeImage/FreeImage/Source
 
 CXX_FLAGS = -fPIC
 
