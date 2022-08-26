@@ -5,8 +5,6 @@
 
 #include <iostream>
 
-
-#include <stb_image.h>
 #include <FreeImage.h>
 
 
@@ -31,6 +29,7 @@ public:
      * 
      */
     ~NeoIL();
+
 
 
 
