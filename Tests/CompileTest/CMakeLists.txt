@@ -24,7 +24,9 @@ endforeach( OUTPUTCONFIG CMAKE_CONFIGURATION_TYPES )
 set(CMAKE_INSTALL_PREFIX ${BIN_DIR})
 
 # Include NeoIL
+message("Adding NeoIL Source")
 include_directories(../..)
+message("Added NeoIL Source")
 
 
 # Build Executable
