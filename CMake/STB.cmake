@@ -1,1 +1,1 @@
-include_directories(${LIB_DIR}/stb)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/STB)
