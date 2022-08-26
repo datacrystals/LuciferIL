@@ -28,5 +28,5 @@ include_directories(../..)
 
 
 # Build Executable
-add_executable(${ProjectName} ${CMAKE_CURRENT_SOURCE_DIR}/Main.cpp)
+add_executable(${ProjectName} Main.cpp)
 target_link_libraries(${ProjectName} NeoIL)
