@@ -13,8 +13,16 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Im
         return Lucifer_LoadingStatus_InvalidData;
     }
 
+    // Setup Image IDs
     ILuint DevILImageID;
     ilGenImages(1, &DevILImageID);
+    ilBindIage(&DevILImageID);
+
+
+
+    // Unload And Destroy Image
+    ilBindImage(0);
+    ilDeleteImage(DevilImageID);
 
 
     // FIMEMORY* FIImageData = FreeImage_OpenMemory(ImageData, Size);
