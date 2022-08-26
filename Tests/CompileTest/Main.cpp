@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include <Lucifer/Lucifer.h>
+#include <LuciferIL/Lucifer.h>
 
 
 int main() {
