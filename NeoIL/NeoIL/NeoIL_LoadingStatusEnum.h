@@ -10,13 +10,13 @@ namespace NeoIL {
 
 
 enum LoadingStatus {
-    NeoIL_ImageLoad_Complete,
-    NeoIL_ImageLoad_InvalidData,
-    NeoIL_ImageLoad_UnsupportedFormat,
-    NeoIL_ImageLoad_InvalidNumChannels,
-    NeoIL_ImageLoad_InvalidWidth,
-    NeoIL_ImageLoad_InvalidHeight, 
-    NeoIL_ImageLoad_UnknownError
+    NeoIL_LoadingStatus_Complete,
+    NeoIL_LoadingStatus_InvalidData,
+    NeoIL_LoadingStatus_UnsupportedFormat,
+    NeoIL_LoadingStatus_InvalidNumChannels,
+    NeoIL_LoadingStatus_InvalidWidth,
+    NeoIL_LoadingStatus_InvalidHeight, 
+    NeoIL_LoadingStatus_UnknownError
 };
 
 
