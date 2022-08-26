@@ -9,6 +9,7 @@
 
 namespace Lucifer {
 
+
 Lucifer::Lucifer() {
 
     FreeImage_Initialise();
