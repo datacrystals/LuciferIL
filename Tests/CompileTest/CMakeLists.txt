@@ -1,9 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(
-	"NeoIL-CompileTest"
-	VERSION "1.0.0"
-	LANGUAGES CXX
-	)
+project(NeoIL-CompileTest)
 
 
 # Define CMake Paths
