@@ -3,6 +3,8 @@
 // Thomas Liao (2022)        //
 //---------------------------//
 
+#pragma once
+
 #include <iostream>
 
 
