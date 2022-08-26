@@ -7,3 +7,6 @@ add_subdirectory(Third-Party/libpng)
 target_include_directories(png PRIVATE Third-Party/libpng)
 
 set(PNG_FOUND 1)
+
+message("Completed Setting Up LibPNG For DevIL")
+
