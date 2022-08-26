@@ -4,7 +4,6 @@ project(NeoIL)
 
 # Include Libs
 include(${PROJECT_SOURCE_DIR}/CMake/DisableTargetWarnings.cmake)
-include(${PROJECT_SOURCE_DIR}/CMake/STB.cmake)
 include(${PROJECT_SOURCE_DIR}/CMake/FreeImage.cmake)
 include(${PROJECT_SOURCE_DIR}/CMake/DevIL.cmake)
 
@@ -22,6 +21,7 @@ target_include_directories(NeoIL
         ${PROJECT_SOURCE_DIR}
     PRIVATE
         ${PROJECT_SOURCE_DIR}/NeoIL
+        ${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/stb
 )
 
 
