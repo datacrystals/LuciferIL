@@ -13,6 +13,7 @@
 #include <LuciferIL/Lucifer.h>
 #include <LuciferIL/Lucifer_LoadImageSTB.h>
 #include <LuciferIL/Lucifer_LoadImageFreeImage.h>
+#include <LuciferIL/Lucifer_LoadImageDevIL.h>
 #include <LuciferIL/Lucifer_EnumToString.h>
 
 
