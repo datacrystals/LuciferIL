@@ -13,9 +13,9 @@ LoadingStatus Lucifer_DevILLoad(unsigned char* ImageData, unsigned long Size, Im
         return Lucifer_LoadingStatus_InvalidData;
     }
 
-    ilUint DevILImageID;
+    ILuint DevILImageID;
     ilGenImages(1, &DevILImageID);
-    
+
 
     // FIMEMORY* FIImageData = FreeImage_OpenMemory(ImageData, Size);
     // FREE_IMAGE_FORMAT Format = FreeImage_GetFileTypeFromMemory(FIImageData);
