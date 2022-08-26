@@ -13,12 +13,12 @@ include(${PROJECT_SOURCE_DIR}/CMake/DevIL.cmake)
 add_library(NeoIL
 
     "NeoIL/NeoIL.cpp"
-    "NeoIL/NeoIL_StatusEnum.cpp"
+    "NeoIL/NeoIL_LoadingStatusEnum.cpp"
     "NeoIL/NeoIL_ImageStruct.cpp"
     "NeoIL/NeoIL_EnumToString.cpp"
     
     "NeoIL/NeoIL.h"
-    "NeoIL/NeoIL_StatusEnum.h"
+    "NeoIL/NeoIL_LoadingStatusEnum.h"
     "NeoIL/NeoIL_ImageStruct.h"
     "NeoIL/NeoIL_EnumToString.h"
 
