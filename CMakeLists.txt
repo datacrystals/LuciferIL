@@ -36,4 +36,13 @@ target_include_directories(NeoIL
         ${PROJECT_SOURCE_DIR}/NeoIL
 )
 
-target_link_libraries(NeoIL FreeImage)
+
+if (Enable_STB)
+    target_link_libraries(NeoIL STB)
+endif()
+if (ENABLE_FREEIMAGE)
+    target_link_libraries(NeoIL FreeImage)
+endif()
+if (Enable_DEVIL)
+target_link_libraries(NeoIL DevIL)
+endif()
