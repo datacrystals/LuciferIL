@@ -8,7 +8,7 @@
 
 namespace Lucifer {
 
-LoadingStatus Lucifer_STBLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
+LoadingStatus Lucifer_LoadSTB(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
 
     // Sanity Check On Input
     if (ImageData == nullptr) {

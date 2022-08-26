@@ -66,7 +66,7 @@ void TestLoadFreeImage(const char* Path) {
     // Load Image Into Memory
     std::cout<<"Loading Image Into Memory Object\n";
     Lucifer::Image Image;
-    Lucifer::LoadingStatus Status = Lucifer::Lucifer_FreeImageLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
+    Lucifer::LoadingStatus Status = Lucifer::Lucifer_LoadFreeImage(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
 
     std::cout<<"Image Loading Status Is: "<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
 
@@ -89,7 +89,31 @@ void TestLoadSTB(const char* Path) {
     // Load Image Into Memory
     std::cout<<"Loading Image Into Memory Object\n";
     Lucifer::Image Image;
-    Lucifer::LoadingStatus Status = Lucifer::Lucifer_STBLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
+    Lucifer::LoadingStatus Status = Lucifer::Lucifer_LoadSTB(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
+
+    std::cout<<"Image Loading Status Is: "<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
+
+    // List Image Information
+    std::cout<<"Image Is "<<Image.Width<<"px Wide\n";
+    std::cout<<"Image Is "<<Image.Height<<"px Tall\n";
+    std::cout<<"Image Has "<<Image.Channels<<" Color Channels\n";
+    
+    // Delete Image From buffer
+    free(Obj.MemoryBuffer);
+
+}
+
+
+void TestLoadDevIL(const char* Path) {
+
+    // Load Image Path
+    ImageFileObject Obj;
+    Obj.LoadImage(Path);
+
+    // Load Image Into Memory
+    std::cout<<"Loading Image Into Memory Object\n";
+    Lucifer::Image Image;
+    Lucifer::LoadingStatus Status = Lucifer::Lucifer_LoadDevIL(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
 
     std::cout<<"Image Loading Status Is: "<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
 
