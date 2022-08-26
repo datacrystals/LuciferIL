@@ -76,12 +76,12 @@ find_package(TIFF)
 find_package(JPEG)
 find_package(Jasper)
 #find_package(Squish)
-find_package(libSquish)
+# find_package(libSquish)
 find_package(NVTT)      # NVidia texture tools
 find_package(OpenEXR)
 #find_package(LCMS)
-find_package(LCMS2)
-find_package(MNG)
+# find_package(LCMS2)
+# find_package(MNG)
 # TODO: check for libmng, others?
 
 # Manually Include Dependencies
@@ -153,7 +153,7 @@ if(LIBSQUISH_FOUND)
 else(LIBSQUISH_FOUND)
     set(IL_USE_DXTC_SQUISH 0)
 endif(LIBSQUISH_FOUND)
-set(IL_USE_DXTC_SQUISH 0)
+
 
 # Sets the output folders
 set(LIBDIR "../lib/")
