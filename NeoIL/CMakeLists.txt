@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 project(NeoIL)
 
 
-# Include Image Libs
+# Include Libs
+include(${PROJECT_SOURCE_DIR}/CMake/DisableTargetWarnings.cmake)
 include(${PROJECT_SOURCE_DIR}/CMake/STB.cmake)
 include(${PROJECT_SOURCE_DIR}/CMake/FreeImage.cmake)
 include(${PROJECT_SOURCE_DIR}/CMake/DevIL.cmake)
