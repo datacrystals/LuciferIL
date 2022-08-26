@@ -12,6 +12,10 @@
 #include <cstring>
 
 // Internal Libs
+#include <LuciferIL/Lucifer_LoadImageSTB.h>
+#include <LuciferIL/Lucifer_LoadImageFreeImage.h>
+#include <LuciferIL/Lucifer_LoadImageDevIL.h>
+
 #include <LuciferIL/Lucifer_LoadingStatusEnum.h>
 #include <LuciferIL/Lucifer_ImageStruct.h>
 

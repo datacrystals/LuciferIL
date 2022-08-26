@@ -13,56 +13,23 @@ LoadingStatus Lucifer_Load(unsigned char* ImageData, unsigned long Size, Image& 
         return Lucifer_LoadingStatus_InvalidData;
     }
 
-    // Setup Image IDs
-    ILuint DevILImageID;
-    ilGenImages(1, &DevILImageID);
-    ilBindImage(DevILImageID);
+    LoadingStatus Status;
 
-    // Load Image
-    ILenum ImageFormat = ilDetermineTypeL(ImageData, Size);
-    if (ImageFormat == IL_TYPE_UNKNOWN) {
-        return Lucifer_LoadingStatus_UnsupportedFormat;
+    Status = Lucifer_LoadSTB(ImageData, Size, Image, MaxChannels);
+    if (Status == Lucifer_LoadingStatus_Complete) {
+        return Status;
     }
-    ilLoadL(ImageFormat, ImageData, Size);
-
-    
-    // Get Image Metadata
-    Image.Width    = ilGetInteger(IL_IMAGE_WIDTH);
-    Image.Height   = ilGetInteger(IL_IMAGE_HEIGHT);
-    Image.Channels = ilGetInteger(IL_IMAGE_CHANNELS);
-
-    if (Image.Width < 1) {
-        ilDeleteImage(DevILImageID);
-        return Lucifer_LoadingStatus_InvalidWidth;
-    } else if (Image.Height < 1) {
-        ilDeleteImage(DevILImageID);
-        return Lucifer_LoadingStatus_InvalidHeight;
+    Status = Lucifer_LoadFreeImage(ImageData, Size, Image, MaxChannels);
+    if (Status == Lucifer_LoadingStatus_Complete) {
+        return Status;
     }
-    if (Image.Channels < 1 || Image.Channels > MaxChannels) {
-        ilDeleteImage(DevILImageID);
-        return Lucifer_LoadingStatus_InvalidNumChannels;
+    Status = Lucifer_LoadDevIL(ImageData, Size, Image, MaxChannels);
+    if (Status == Lucifer_LoadingStatus_Complete) {
+        return Status;
     }
 
 
-
-    // Memcpy Image Data Pointer
-    unsigned long  ImageSize  = ilGetInteger(IL_IMAGE_SIZE_OF_DATA);
-    unsigned char* ImageBytes = ilGetData();
-
-    if (ImageBytes == nullptr) {
-        ilDeleteImage(DevILImageID);
-        return Lucifer_LoadingStatus_UnsupportedFormat;
-    }    
-
-    Image.Bytes.reset(new unsigned char[ImageSize]);
-    memcpy(Image.Bytes.get(), ImageBytes, ImageSize);
-
-
-    // Unload And Destroy Image
-    ilBindImage(0);
-    ilDeleteImage(DevILImageID);
-
-    return Lucifer_LoadingStatus_Complete;
+    return Status;
 
 }
 
