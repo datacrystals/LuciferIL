@@ -196,7 +196,7 @@ SSE3
 
 /* png support (PNG is a smart, loseless and even open format. libpng
    powered.) */
-/* #undef IL_NO_PNG */
+#define IL_NO_PNG 1
 
 /* pnm support (PNM (Portable aNy Map format) is considered the
    least-common-denominator for converting pixmap, graymap, or bitmap files
