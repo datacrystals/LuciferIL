@@ -31,7 +31,7 @@ namespace NeoIL {
  * @param MaxChannels Maximum number of supported channels, defaults to 4
  * @return NeoIL::LoadingStatus Status of loading
  */
-NeoIL::LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long Size, NeoIL::Image& Image, int MaxChannels = 4);
+LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels = 4);
 
 
 
