@@ -3,8 +3,6 @@ project(NeoILCompileTest)
 
 
 # Define CMake Paths
-set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Third-Party")
-set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Source")
 set(BIN_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Binaries")
 
 # Set Binary Dir
@@ -23,3 +21,8 @@ set(CMAKE_INSTALL_PREFIX ${BIN_DIR})
 
 # Include NeoIL
 include_directories(../..)
+
+
+# Build Executable
+add_executable(${ProjectName} ${CMAKE_CURRENT_SOURCE_DIR}/Main.cpp)
+target_link_libraries(${ProjectName} NeoIL)
