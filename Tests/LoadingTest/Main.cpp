@@ -19,7 +19,7 @@
 struct ImageFileObject {
 
     // Declare Member Variables
-    BYTE *MemoryBuffer;
+    unsigned char *MemoryBuffer;
     struct stat Buffer;
     int Result;
 
@@ -31,14 +31,14 @@ struct ImageFileObject {
         Result = stat(FilePath, &Buffer);
         if (Result == 0) {
 
-            MemoryBuffer = (BYTE*)malloc(Buffer.st_size * sizeof(BYTE));
+            MemoryBuffer = (BYTE*)malloc(Buffer.st_size * sizeof(unsigned char));
             if (MemoryBuffer) {
 
                 FILE *Stream = fopen(FilePath, "rb");
                 if (Stream) {
 
                     // Read File Data
-                    fread(MemoryBuffer, sizeof(BYTE), Buffer.st_size, Stream);
+                    fread(MemoryBuffer, sizeof(unsigned char), Buffer.st_size, Stream);
                     fclose(Stream);
 
                     return true;
@@ -65,7 +65,7 @@ void TestLoad(const char* Path) {
     // Load Image Into Memory
     std::cout<<"Loading Image Into Memory Object\n";
     NeoIL::Image Image;
-    NeoIL::LoadingStatus Status = NeoIL::NeoIL_STBLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
+    NeoIL::LoadingStatus Status = NeoIL::NeoIL_FreeImageLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
 
     std::cout<<"Image Loading Status Is: "<<NeoIL::NeoIL_GetLoadingStatusString(Status)<<std::endl;
 
