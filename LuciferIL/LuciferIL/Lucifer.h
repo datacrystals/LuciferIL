@@ -11,6 +11,7 @@
 // Internal Lib
 #include <LuciferIL/Lucifer_LoadImageSTB.h>
 #include <LuciferIL/Lucifer_LoadImageFreeImage.h>
+#include <LuciferIL/Lucifer_LoadImageDevIL.h>
 
 // Third-Party Lib
 #define STB_IMAGE_IMPLEMENTATION
