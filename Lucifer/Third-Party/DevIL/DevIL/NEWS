@@ -552,7 +552,7 @@ These are just highlights of what was changed during each release.  For a more i
 - Removed the last of the ilutOgl function declarations and the GL compressed functions.
 - Fixed the JPEG blockiness problems with some rare JPEGs.
 - Removed the two poor gamma correction functions.
-- Changed all OpenIL references to NeoIL.
+- Changed all OpenIL references to Lucifer.
 - Added ilBlit().
 - Fixed ilBindImage() behaviour when a new image was requested.
 - Added footer writing to .tga saving.

@@ -1,6 +1,6 @@
 //---------------------------//
-// New Image Library (NeoIL) //
+// New Image Library (Lucifer) //
 // Thomas Liao (2022)        //
 //---------------------------//
 
-#include <NeoIL_LoadingStatusEnum.h>
+#include <Lucifer_LoadingStatusEnum.h>

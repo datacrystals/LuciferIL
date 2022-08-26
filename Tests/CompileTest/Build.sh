@@ -6,5 +6,5 @@ make -j
 
 cd ..
 cd Binaries
-./NeoIL-CompileTest
+./Lucifer-CompileTest
 cd ..

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(NeoIL-CompileTest)
+project(Lucifer-CompileTest)
 
 
 # Define CMake Paths
@@ -19,13 +19,13 @@ endforeach( OUTPUTCONFIG CMAKE_CONFIGURATION_TYPES )
 
 set(CMAKE_INSTALL_PREFIX ${BIN_DIR})
 
-# Include NeoIL
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../NeoIL/ ${CMAKE_CURRENT_BINARY_DIR}/NeoIL)
+# Include Lucifer
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../Lucifer/ ${CMAKE_CURRENT_BINARY_DIR}/Lucifer)
 
 
 # Build Executable
-add_executable(NeoIL-CompileTest Main.cpp)
-target_link_libraries(NeoIL-CompileTest NeoIL)
+add_executable(Lucifer-CompileTest Main.cpp)
+target_link_libraries(Lucifer-CompileTest Lucifer)
 
 
 # Copy Assets

@@ -1,10 +1,10 @@
-// NeoIL Test
+// Lucifer Test
 
 #include <iostream>
 
-#include <NeoIL/NeoIL.h>
+#include <Lucifer/Lucifer.h>
 
 
 int main() {
-    std::cout<<"Included NeoIL!\n";
+    std::cout<<"Included Lucifer!\n";
 }

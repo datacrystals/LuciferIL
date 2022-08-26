@@ -1,5 +1,5 @@
 //---------------------------//
-// New Image Library (NeoIL) //
+// New Image Library (Lucifer) //
 // Thomas Liao (2022)        //
 //---------------------------//
 
@@ -8,7 +8,7 @@
 #include <memory>
 
 
-namespace NeoIL {
+namespace Lucifer {
 
 
 struct Image {

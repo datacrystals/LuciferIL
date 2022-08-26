@@ -1,16 +1,16 @@
 //---------------------------//
-// New Image Library (NeoIL) //
+// New Image Library (Lucifer) //
 // Thomas Liao (2022)        //
 //---------------------------//
 
-#include <NeoIL_FreeImageLoadImage.h>
+#include <Lucifer_FreeImageLoadImage.h>
 
-namespace NeoIL {
+namespace Lucifer {
 
-LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
+LoadingStatus Lucifer_FreeImageLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
 
     if (ImageData == nullptr) {
-        return NeoIL_LoadingStatus_InvalidData;
+        return Lucifer_LoadingStatus_InvalidData;
     }
 
     FIMEMORY* FIImageData = FreeImage_OpenMemory(ImageData, Size);
@@ -18,7 +18,7 @@ LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long Size, 
 
     if (Format == FIF_UNKNOWN) {
         FreeImage_CloseMemory(FIImageData);
-        return NeoIL_LoadingStatus_UnsupportedFormat;
+        return Lucifer_LoadingStatus_UnsupportedFormat;
     }
 
 
@@ -31,7 +31,7 @@ LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long Size, 
     Line  = FreeImage_GetLine(FIImage);
 
     if (FIImage == nullptr) {
-        return NeoIL_LoadingStatus_UnsupportedFormat;
+        return Lucifer_LoadingStatus_UnsupportedFormat;
     }    
 
     Image.Bytes.reset(new unsigned char[FreeImage_GetMemorySize(FIImage)]);
@@ -42,21 +42,21 @@ LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long Size, 
 
     if (Image.Width < 1) {
         FreeImage_Unload(FIImage);
-        return NeoIL_LoadingStatus_InvalidWidth;
+        return Lucifer_LoadingStatus_InvalidWidth;
     } else if (Image.Height < 1) {
         FreeImage_Unload(FIImage);
-        return NeoIL_LoadingStatus_InvalidHeight;
+        return Lucifer_LoadingStatus_InvalidHeight;
     }
 
     Image.Channels = Line / Width;
 
     if (Image.Channels < 1 || Image.Channels > MaxChannels) {
         FreeImage_Unload(FIImage);
-        return NeoIL_LoadingStatus_InvalidNumChannels;
+        return Lucifer_LoadingStatus_InvalidNumChannels;
     }
 
     FreeImage_Unload(FIImage);
-    return NeoIL_LoadingStatus_Complete;
+    return Lucifer_LoadingStatus_Complete;
 
 }
 

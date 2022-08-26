@@ -1,5 +1,5 @@
 //---------------------------//
-// New Image Library (NeoIL) //
+// New Image Library (Lucifer) //
 // Thomas Liao (2022)        //
 //---------------------------//
 
@@ -10,10 +10,10 @@
 
 
 // Internal Includes
-#include <NeoIL/NeoIL_LoadingStatusEnum.h>
+#include <Lucifer/Lucifer_LoadingStatusEnum.h>
 
 
-namespace NeoIL {
+namespace Lucifer {
 
 /**
  * @brief Converts the loading status enum into a string that can be used for logging.
@@ -21,7 +21,7 @@ namespace NeoIL {
  * @param Status Enum returned by image loading functions.
  * @return std::string String containing name of enum.
  */
-std::string NeoIL_GetLoadingStatusString(LoadingStatus Status);
+std::string Lucifer_GetLoadingStatusString(LoadingStatus Status);
 
 
 

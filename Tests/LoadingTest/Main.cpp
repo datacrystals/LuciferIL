@@ -10,10 +10,10 @@
 #include <sys/stat.h>
 #include <stdlib.h>
 
-#include <NeoIL/NeoIL.h>
-#include <NeoIL/NeoIL_STBLoadImage.h>
-#include <NeoIL/NeoIL_FreeImageLoadImage.h>
-#include <NeoIL/NeoIL_EnumToString.h>
+#include <Lucifer/Lucifer.h>
+#include <Lucifer/Lucifer_STBLoadImage.h>
+#include <Lucifer/Lucifer_FreeImageLoadImage.h>
+#include <Lucifer/Lucifer_EnumToString.h>
 
 
 struct ImageFileObject {
@@ -64,10 +64,10 @@ void TestLoadFreeImage(const char* Path) {
 
     // Load Image Into Memory
     std::cout<<"Loading Image Into Memory Object\n";
-    NeoIL::Image Image;
-    NeoIL::LoadingStatus Status = NeoIL::NeoIL_FreeImageLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
+    Lucifer::Image Image;
+    Lucifer::LoadingStatus Status = Lucifer::Lucifer_FreeImageLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
 
-    std::cout<<"Image Loading Status Is: "<<NeoIL::NeoIL_GetLoadingStatusString(Status)<<std::endl;
+    std::cout<<"Image Loading Status Is: "<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
 
     // List Image Information
     std::cout<<"Image Is "<<Image.Width<<"px Wide\n";
@@ -87,10 +87,10 @@ void TestLoadSTB(const char* Path) {
 
     // Load Image Into Memory
     std::cout<<"Loading Image Into Memory Object\n";
-    NeoIL::Image Image;
-    NeoIL::LoadingStatus Status = NeoIL::NeoIL_STBLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
+    Lucifer::Image Image;
+    Lucifer::LoadingStatus Status = Lucifer::Lucifer_STBLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
 
-    std::cout<<"Image Loading Status Is: "<<NeoIL::NeoIL_GetLoadingStatusString(Status)<<std::endl;
+    std::cout<<"Image Loading Status Is: "<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
 
     // List Image Information
     std::cout<<"Image Is "<<Image.Width<<"px Wide\n";

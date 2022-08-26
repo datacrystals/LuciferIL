@@ -1,5 +1,5 @@
 //---------------------------//
-// New Image Library (NeoIL) //
+// New Image Library (Lucifer) //
 // Thomas Liao (2022)        //
 //---------------------------//
 
@@ -10,10 +10,10 @@
 
 
 // Internal Includes
-#include <NeoIL/NeoIL_LoadingStatusEnum.h>
+#include <Lucifer/Lucifer_LoadingStatusEnum.h>
 
 
-namespace NeoIL {
+namespace Lucifer {
 
 /**
  * @brief Converts the loading status enum into an int representing the severity of the state.
@@ -21,7 +21,7 @@ namespace NeoIL {
  * @param Status Enum returned by image loading functions.
  * @return int String containing name of enum.
  */
-int NeoIL_GetLoadingStatusLevel(LoadingStatus Status);
+int Lucifer_GetLoadingStatusLevel(LoadingStatus Status);
 
 
 

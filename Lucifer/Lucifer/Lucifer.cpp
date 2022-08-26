@@ -1,17 +1,17 @@
 //---------------------------//
-// New Image Library (NeoIL) //
+// New Image Library (Lucifer) //
 // Thomas Liao (2022)        //
 //---------------------------//
 
-#include <NeoIL.h>
+#include <Lucifer.h>
 
-NeoIL::NeoIL::NeoIL() {
+Lucifer::Lucifer::Lucifer() {
 
     FreeImage_Initialise();
 
 }
 
-NeoIL::NeoIL::~NeoIL() {
+Lucifer::Lucifer::~Lucifer() {
 
     FreeImage_DeInitialise();
 

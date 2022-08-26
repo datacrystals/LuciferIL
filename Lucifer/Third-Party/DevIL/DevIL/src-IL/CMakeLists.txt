@@ -68,7 +68,7 @@ endif(BUILD_SHARED_LIBS)
 # various compiler stuff
 test_big_endian(WORDS_BIGENDIAN)
 
-## NEOIL Modifications ------------------------------
+## Lucifer Modifications ------------------------------
 
 # check availability of optional external libs
 find_package(PNG)
@@ -87,7 +87,7 @@ find_package(OpenEXR)
 # Manually Include Dependencies
 # include(Dependencies.cmake)
 
-## END NEOIL Modifications ------------------------------
+## END Lucifer Modifications ------------------------------
 
 
 

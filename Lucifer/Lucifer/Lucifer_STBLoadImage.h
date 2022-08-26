@@ -1,5 +1,5 @@
 //---------------------------//
-// New Image Library (NeoIL) //
+// New Image Library (Lucifer) //
 // Thomas Liao (2022)        //
 //---------------------------//
 
@@ -16,11 +16,11 @@
 #include <stb_image.h>
 
 // Internal Libs
-#include <NeoIL/NeoIL_LoadingStatusEnum.h>
-#include <NeoIL/NeoIL_ImageStruct.h>
+#include <Lucifer/Lucifer_LoadingStatusEnum.h>
+#include <Lucifer/Lucifer_ImageStruct.h>
 
 
-namespace NeoIL {
+namespace Lucifer {
 
 
 /**
@@ -30,9 +30,9 @@ namespace NeoIL {
  * @param Size Size of the array
  * @param Image Reference to the image to be updated
  * @param MaxChannels Maximum number of supported channels, defaults to 4
- * @return NeoIL::LoadingStatus Status of loading
+ * @return Lucifer::LoadingStatus Status of loading
  */
-LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels = 4);
+LoadingStatus Lucifer_STBLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels = 4);
 
 
 
