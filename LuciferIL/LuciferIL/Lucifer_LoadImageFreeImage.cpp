@@ -3,7 +3,7 @@
 // Thomas Liao (2022)        //
 //---------------------------//
 
-#include <LuciferIL/Lucifer_FreeImageLoadImage.h>
+#include <LuciferIL/Lucifer_LoadImageFreeImage.h>
 
 namespace Lucifer {
 
