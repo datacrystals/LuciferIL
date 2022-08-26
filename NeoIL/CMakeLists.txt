@@ -25,6 +25,5 @@ target_include_directories(NeoIL
 )
 
 
-target_link_libraries(NeoIL STB)
 target_link_libraries(NeoIL FreeImage)
-target_link_libraries(NeoIL DevIL)
+target_link_libraries(NeoIL IL)
