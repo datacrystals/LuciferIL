@@ -4,11 +4,8 @@ project(NeoIL)
 
 add_library(NeoIL
 
-    "NeoIL/SetThreadName.cpp"
-    "NeoIL/GetThreadName.cpp"
-    
-    "NeoIL/SetThreadName.h"
-    "NeoIL/GetThreadName.h"
+    "NeoIL/NeoIL.cpp"
+    "NeoIL/NeoIL.h"
 
 )
 
