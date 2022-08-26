@@ -67,7 +67,7 @@ void TestLoad(const char* Path) {
     NeoIL::Image Image;
     NeoIL::LoadingStatus Status = NeoIL::NeoIL_STBLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
 
-    std::cout<<"Image Loading Status Is: "<<NeoIL::Statusto
+    std::cout<<"Image Loading Status Is: "<<NeoIL::NeoIL_GetLoadingStatusString(Status)<<std::endl;
 
     // List Image Information
     std::cout<<"Image Is "<<Image.Width<<"px Wide\n";
