@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 3.5)
 project(NeoILCompileTest)
 
 
+# Define CMake Paths
+set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Third-Party")
+set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Source")
+set(BIN_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Binaries")
 
 # Set Binary Dir
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${BIN_DIR})
@@ -16,3 +20,6 @@ foreach( OUTPUTCONFIG ${CMAKE_CONFIGURATION_TYPES} )
 endforeach( OUTPUTCONFIG CMAKE_CONFIGURATION_TYPES )
 
 set(CMAKE_INSTALL_PREFIX ${BIN_DIR})
+
+# Include NeoIL
+include_directories(../..)
