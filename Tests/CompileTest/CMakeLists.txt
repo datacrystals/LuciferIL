@@ -26,8 +26,9 @@ set(CMAKE_INSTALL_PREFIX ${BIN_DIR})
 # Include NeoIL
 get_filename_component(NEOIL_DIR ../../NeoIL/ ABSOLUTE)
 include_directories(${NEOIL_DIR})
+message(${NEOIL_DIR})
 
 
 # Build Executable
-add_executable(${ProjectName} Main.cpp)
-target_link_libraries(${ProjectName} NeoIL)
+add_executable(NeoIL-CompileTest Main.cpp)
+target_link_libraries(NeoIL-CompileTest NeoIL)
