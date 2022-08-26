@@ -1,10 +1,10 @@
 # LibPNG
 message("Setting Up LibPNG For DevIL")
 
-include_directories(Third-Party/libpng)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/libpng)
 
-add_subdirectory(Third-Party/libpng)
-target_include_directories(png PRIVATE Third-Party/libpng)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/libpng)
+target_include_directories(png PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/libpng)
 
 set(PNG_FOUND 1)
 
