@@ -12,8 +12,6 @@
 // External Libs
 #include <stb_image.h>
 
-#include <FreeImage.h>
-
 // Internal Libs
 #include <NeoIL/NeoIL_LoadingStatusEnum.h>
 #include <NeoIL/NeoIL_ImageStruct.h>
