@@ -14,6 +14,10 @@ NeoIL::LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size,
     int Width, Height, Channels;
     unsigned char* ImageBytes = stbi_load_from_memory(ImageData, Size, &Width, &Height, &Channels, 0);
 
+    if (Image.Bytes == nullptr) {
+        return NeoIL::NeoIL_LoadingStatus_UnsupportedFormat;
+    }
+
     unsigned long ImageLength = strlen((const char*)ImageBytes);
     Image.Bytes.reset(new unsigned char[ImageLength]);
     memcpy(Image.Bytes.get(), ImageBytes, ImageLength);
@@ -22,9 +26,10 @@ NeoIL::LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size,
     Image.Height = Height;
     Image.Channels = Channels;
 
-    if (Image.Bytes == nullptr) {
-        return NeoIL::NeoIL_LoadingStatus_UnsupportedFormat;
-    } else if (Image.Width < 1) {
+    stbi_image_free(ImageBytes);
+    
+
+    if (Image.Width < 1) {
         return NeoIL::NeoIL_LoadingStatus_InvalidWidth;
     } else if (Image.Height < 1) {
         return NeoIL::NeoIL_LoadingStatus_InvalidHeight;
