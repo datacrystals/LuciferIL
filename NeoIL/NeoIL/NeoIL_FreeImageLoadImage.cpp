@@ -11,8 +11,13 @@ NeoIL::LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long
         return NeoIL::NeoIL_LoadingStatus_InvalidData;
     }
 
+    FIMEMORY* FIImageData = FreeImage_OpenMemory(ImageData, Size);
+    FREE_IMAGE_FORMAT Format = FreeImage_GetFileTypeFromMemory(FIImageData);
+    FIBITMAP* Image = FreeImage_LoadFromMemory(Format, FIImageData);
+    FreeImage_CloseMemory(FIImageData);
+
+    
     int Width, Height, Channels;
-    unsigned char* ImageBytes = FreeImagei_load_from_memory(ImageData, Size, &Width, &Height, &Channels, 0);
     Image.Bytes = std::make_unique<unsigned char*>(ImageBytes);
     Image.Width = Width;
     Image.Height = Height;
