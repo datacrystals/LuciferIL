@@ -10,7 +10,7 @@
 
 
 // Internal Includes
-#include <NeoIL_LoadingStatusEnum.h>
+#include <NeoIL/NeoIL_LoadingStatusEnum.h>
 
 
 namespace NeoIL {
