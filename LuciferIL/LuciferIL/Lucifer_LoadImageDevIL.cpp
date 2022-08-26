@@ -46,21 +46,19 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Im
 
 
     // Memcpy Image Data Pointer
-    
-    // if (FIImage == nullptr) {
-    //     return Lucifer_LoadingStatus_UnsupportedFormat;
-    // }    
+    unsigned long  ImageSize  = ilGetInteger(IL_IMAGE_SIZE_OF_DATA);
+    unsigned char* ImageBytes = ilGetData();
 
-    // Image.Bytes.reset(new unsigned char[FreeImage_GetMemorySize(FIImage)]);
-    // memcpy(Image.Bytes.get(), FreeImage_GetBits(FIImage), FreeImage_GetMemorySize(FIImage));
+    if (ImageBytes == nullptr) {
+        ilDeleteImage(DevILImageID);
+        return Lucifer_LoadingStatus_UnsupportedFormat;
+    }    
 
-
-
-
-
+    Image.Bytes.reset(new unsigned char[FreeImage_GetMemorySize(FIImage)]);
+    memcpy(Image.Bytes.get(), FreeImage_GetBits(FIImage), FreeImage_GetMemorySize(FIImage));
 
 
-    // FreeImage_Unload(FIImage);
+
 
 
 
