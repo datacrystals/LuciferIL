@@ -17,8 +17,10 @@ add_library(Lucifer
     "LuciferIL/Lucifer_LoadImageSTB.cpp"
     "LuciferIL/Lucifer_LoadImageFreeImage.cpp"
     "LuciferIL/Lucifer_LoadImageDevIL.cpp"
+    "LuciferIL/Lucifer_WriteImage.cpp"
 
     "LuciferIL/Lucifer_LoadingStatusEnum.cpp"
+    "LuciferIL/Lucifer_WritingStatusEnum.cpp"
     
     "LuciferIL/Lucifer_ImageStruct.cpp"
     
@@ -32,8 +34,10 @@ add_library(Lucifer
     "LuciferIL/Lucifer_LoadImageSTB.h"
     "LuciferIL/Lucifer_LoadImageFreeImage.h"
     "LuciferIL/Lucifer_LoadImageDevIL.h"
+    "LuciferIL/Lucifer_WriteImage.h"
     
     "LuciferIL/Lucifer_LoadingStatusEnum.h"
+    "LuciferIL/Lucifer_WritingStatusEnum.h"
     
     "LuciferIL/Lucifer_ImageStruct.h"
     
