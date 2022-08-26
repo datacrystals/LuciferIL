@@ -13,6 +13,12 @@ NeoIL::LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long
 
     FIMEMORY* FIImageData = FreeImage_OpenMemory(ImageData, Size);
     FREE_IMAGE_FORMAT Format = FreeImage_GetFileTypeFromMemory(FIImageData);
+
+    if (Format == FIF_UNKNOWN) {
+        return NeoIL::NeoIL_LoadingStatus_UnsupportedFormat;
+    }
+
+
     FIBITMAP* FIImage = FreeImage_LoadFromMemory(Format, FIImageData);
     FreeImage_CloseMemory(FIImageData);
 
