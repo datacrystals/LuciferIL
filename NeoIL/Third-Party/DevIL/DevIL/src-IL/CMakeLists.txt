@@ -72,7 +72,7 @@ test_big_endian(WORDS_BIGENDIAN)
 
 # check availability of optional external libs
 #find_package(PNG)
-find_package(TIFF)
+#find_package(TIFF)
 find_package(JPEG)
 find_package(Jasper)
 #find_package(Squish)
