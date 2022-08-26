@@ -10,10 +10,10 @@
 #include <sys/stat.h>
 #include <stdlib.h>
 
-#include <Lucifer/Lucifer.h>
-#include <Lucifer/Lucifer_STBLoadImage.h>
-#include <Lucifer/Lucifer_FreeImageLoadImage.h>
-#include <Lucifer/Lucifer_EnumToString.h>
+#include <LuciferIL/Lucifer.h>
+#include <LuciferIL/Lucifer_STBLoadImage.h>
+#include <LuciferIL/Lucifer_FreeImageLoadImage.h>
+#include <LuciferIL/Lucifer_EnumToString.h>
 
 
 struct ImageFileObject {

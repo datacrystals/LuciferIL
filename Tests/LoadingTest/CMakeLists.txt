@@ -20,12 +20,12 @@ endforeach( OUTPUTCONFIG CMAKE_CONFIGURATION_TYPES )
 set(CMAKE_INSTALL_PREFIX ${BIN_DIR})
 
 # Include Lucifer
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../Lucifer/ ${CMAKE_CURRENT_BINARY_DIR}/Lucifer)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../LuciferIL/ ${CMAKE_CURRENT_BINARY_DIR}/LuciferIL)
 
 
 # Build Executable
 add_executable(Lucifer-CompileTest Main.cpp)
-target_link_libraries(Lucifer-CompileTest Lucifer)
+target_link_libraries(Lucifer-CompileTest LuciferIL)
 
 
 # Copy Assets
