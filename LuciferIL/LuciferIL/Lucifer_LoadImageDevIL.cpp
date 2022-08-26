@@ -24,7 +24,7 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Im
 
     // Unload And Destroy Image
     ilBindImage(0);
-    ilDeleteImage(DevilImageID);
+    ilDeleteImage(DevILImageID);
 
 
     // FIMEMORY* FIImageData = FreeImage_OpenMemory(ImageData, Size);
