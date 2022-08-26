@@ -25,7 +25,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../LuciferIL/ ${CMAKE_CURRENT_BI
 
 # Build Executable
 add_executable(Lucifer-CompileTest Main.cpp)
-target_link_libraries(Lucifer-CompileTest LuciferIL)
+target_link_libraries(Lucifer-CompileTest Lucifer)
 
 
 # Copy Assets

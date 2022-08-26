@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(LuciferIL)
+project(Lucifer)
 
 
 # Include Libs
@@ -10,7 +10,7 @@ include(${PROJECT_SOURCE_DIR}/CMake/DevIL.cmake)
 
 
 # Setup Library Target
-add_library(LuciferIL
+add_library(Lucifer
 
     "LuciferIL/Lucifer.cpp"
     "LuciferIL/Lucifer_STBLoadImage.cpp"
@@ -37,16 +37,16 @@ add_library(LuciferIL
     "LuciferIL/Lucifer_EnumToLogLevel.h"
 
 )
-target_include_directories(LuciferIL
+target_include_directories(Lucifer
     PUBLIC
         ${PROJECT_SOURCE_DIR}
         ${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/stb
 
     PRIVATE
-        ${PROJECT_SOURCE_DIR}/Lucifer
+        ${PROJECT_SOURCE_DIR}/LuciferIL
         ${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/stb
 )
 
 
-target_link_libraries(LuciferIL FreeImage)
-target_link_libraries(LuciferIL IL)
+target_link_libraries(Lucifer FreeImage)
+target_link_libraries(Lucifer IL)
