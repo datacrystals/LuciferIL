@@ -8,6 +8,7 @@
 
 // Standard Libs
 #include <iostream>
+#include <string.h>
 
 // External Libs
 #include <stb_image.h>
