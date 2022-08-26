@@ -38,8 +38,6 @@ public:
     ~NeoIL();
 
 
-
-
 };
 
 
