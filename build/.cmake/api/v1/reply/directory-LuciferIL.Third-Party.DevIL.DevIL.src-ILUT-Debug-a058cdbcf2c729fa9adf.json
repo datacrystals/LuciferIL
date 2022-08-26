@@ -1,0 +1,77 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/DevIL/DevIL/src-ILUT/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 74,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 81,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"LuciferIL/Third-Party/DevIL/DevIL/lib/x64/libILUT.so"
+			],
+			"targetId" : "ILUT::@a609d6d836488920aea9",
+			"targetIndex" : 6,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/IL",
+			"paths" : 
+			[
+				"/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/DevIL/DevIL/src-ILUT/../include/IL/ilut.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/pkgconfig",
+			"paths" : 
+			[
+				"/home/tliao/Documents/LuciferIL/build/LuciferIL/Third-Party/DevIL/DevIL/src-ILUT/ILUT.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "LuciferIL/Third-Party/DevIL/DevIL/src-ILUT",
+		"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/DevIL/DevIL/src-ILUT"
+	}
+}

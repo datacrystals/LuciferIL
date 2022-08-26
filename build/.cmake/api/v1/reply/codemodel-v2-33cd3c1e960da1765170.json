@@ -1,0 +1,399 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "LuciferIL",
+					"childIndexes" : 
+					[
+						2,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-LuciferIL-Debug-780c2053ae97372a111a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/home/tliao/Documents/LuciferIL/LuciferIL",
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"build" : "LuciferIL/Third-Party/FreeImage/FreeImage",
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5
+					],
+					"jsonFile" : "directory-LuciferIL.Third-Party.FreeImage.FreeImage-Debug-7721012dacaf3a57f5f0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.3"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/FreeImage/FreeImage",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "LuciferIL/Third-Party/FreeImage/FreeImage/TestAPI",
+					"jsonFile" : "directory-LuciferIL.Third-Party.FreeImage.FreeImage.TestAPI-Debug-019e1f6a94f32532b112.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.3"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 3,
+					"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/FreeImage/FreeImage/TestAPI",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "LuciferIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus",
+					"jsonFile" : "directory-LuciferIL.Third-Party.FreeImage.FreeImage.Wrapper.FreeImagePlus-Debug-d8f038f7fb38792552db.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 4,
+					"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "LuciferIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test",
+					"jsonFile" : "directory-LuciferIL.Third-Party.FreeImage.FreeImage.Wrapper.FreeImagePlus.test-Debug-126f433c7522757deb6d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16.2"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 5,
+					"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "LuciferIL/Third-Party/DevIL/DevIL",
+					"childIndexes" : 
+					[
+						7,
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-LuciferIL.Third-Party.DevIL.DevIL-Debug-f6399afa1d86168d4498.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 6,
+					"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/DevIL/DevIL"
+				},
+				{
+					"build" : "LuciferIL/Third-Party/DevIL/DevIL/src-IL",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-LuciferIL.Third-Party.DevIL.DevIL.src-IL-Debug-34537c3c231308ff3793.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 7,
+					"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/DevIL/DevIL/src-IL",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "LuciferIL/Third-Party/DevIL/DevIL/src-ILU",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-LuciferIL.Third-Party.DevIL.DevIL.src-ILU-Debug-9fc954b76c1a3e193ab0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 8,
+					"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/DevIL/DevIL/src-ILU",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "LuciferIL/Third-Party/DevIL/DevIL/src-ILUT",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-LuciferIL.Third-Party.DevIL.DevIL.src-ILUT-Debug-a058cdbcf2c729fa9adf.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 9,
+					"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/DevIL/DevIL/src-ILUT",
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Lucifer-CompileTest",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Lucifer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						3,
+						4,
+						5
+					],
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "FreeImage",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "FreeImageTest",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "FreeImagePlus",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "FreeImagePlusTest",
+					"parentIndex" : 2,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						7,
+						8,
+						9
+					],
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "ImageLib",
+					"parentIndex" : 1
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "DevIL",
+					"parentIndex" : 6,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "ILU",
+					"parentIndex" : 6,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "ILUT",
+					"parentIndex" : 6,
+					"targetIndexes" : 
+					[
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "FreeImage::@f0c4abc53762d83f2f06",
+					"jsonFile" : "target-FreeImage-Debug-3465cfd6670cf8f05427.json",
+					"name" : "FreeImage",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "FreeImagePlus::@af307d812ae6a166c0c5",
+					"jsonFile" : "target-FreeImagePlus-Debug-d47a36d055345cb81cf6.json",
+					"name" : "FreeImagePlus",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "FreeImagePlusTest::@81b7bf2874565dee1a70",
+					"jsonFile" : "target-FreeImagePlusTest-Debug-085bc84efc8a1f566075.json",
+					"name" : "FreeImagePlusTest",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "FreeImageTest::@b98b849779780065e61a",
+					"jsonFile" : "target-FreeImageTest-Debug-ede4c5baa08f0132ee3f.json",
+					"name" : "FreeImageTest",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "IL::@1a689dd63f4e965a7a8c",
+					"jsonFile" : "target-IL-Debug-915e70e504ac0e5d9ffb.json",
+					"name" : "IL",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "ILU::@029b05645bb16d920287",
+					"jsonFile" : "target-ILU-Debug-96914221de763bd6d47c.json",
+					"name" : "ILU",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "ILUT::@a609d6d836488920aea9",
+					"jsonFile" : "target-ILUT-Debug-74dfe933bb441250237c.json",
+					"name" : "ILUT",
+					"projectIndex" : 9
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Lucifer::@70631f91e381d485f069",
+					"jsonFile" : "target-Lucifer-Debug-be819c2fae0091b93c3a.json",
+					"name" : "Lucifer",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Lucifer-CompileTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lucifer-CompileTest-Debug-293ee4a758bef85714eb.json",
+					"name" : "Lucifer-CompileTest",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tliao/Documents/LuciferIL/build",
+		"source" : "/home/tliao/Documents/LuciferIL/Tests/LoadingTest"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "LuciferIL/Third-Party/FreeImage/FreeImage/TestAPI",
+		"source" : "/home/tliao/Documents/LuciferIL/LuciferIL/Third-Party/FreeImage/FreeImage/TestAPI"
+	}
+}

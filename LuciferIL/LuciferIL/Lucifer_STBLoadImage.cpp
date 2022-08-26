@@ -4,7 +4,7 @@
 //---------------------------//
 
 #include <LuciferIL/Lucifer_STBLoadImage.h>
-
+#include <iostream>
 namespace Lucifer {
 
 LoadingStatus Lucifer_STBLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
@@ -15,8 +15,7 @@ LoadingStatus Lucifer_STBLoad(unsigned char* ImageData, unsigned long Size, Imag
 
     int Width, Height, Channels;
     unsigned char* ImageBytes = stbi_load_from_memory(ImageData, Size, &Width, &Height, &Channels, 0);
-    if (Image.Bytes == nullptr) {
-        std::cout<<stbi_failure_reason()<<"\n";
+    if (ImageBytes == nullptr) {
         return Lucifer_LoadingStatus_UnsupportedFormat;
     }
 

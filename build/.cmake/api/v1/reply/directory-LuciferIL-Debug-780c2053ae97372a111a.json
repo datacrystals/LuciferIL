@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "LuciferIL",
+		"source" : "/home/tliao/Documents/LuciferIL/LuciferIL"
+	}
+}
