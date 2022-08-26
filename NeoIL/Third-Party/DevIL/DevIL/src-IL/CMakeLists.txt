@@ -85,13 +85,7 @@ find_package(MNG)
 # TODO: check for libmng, others?
 
 # Manually Include Dependencies
-include_directories(Third-Party/libpng)
-target_include_directories(png PRIVATE Third-Party/libpng)
-
-add_subdirectory(Third-Party/libpng)
-
-set(PNG_FOUND 1)
-
+include(Dependencies.cmake)
 
 ## END NEOIL Modifications ------------------------------
 
