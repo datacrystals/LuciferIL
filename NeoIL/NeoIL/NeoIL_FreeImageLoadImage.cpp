@@ -16,24 +16,29 @@ NeoIL::LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long
     FIBITMAP* FIImage = FreeImage_LoadFromMemory(Format, FIImageData);
     FreeImage_CloseMemory(FIImageData);
 
-    
-    int Width, Height, Channels;
+
+    if (FIBITMAP == nullptr) {
+        return NeoIL::NeoIL_LoadingStatus_UnsupportedFormat;
+    }    
 
     Image.Bytes.reset(new unsigned char[FreeImage_GetMemorySize(FIImage)]);
-    memcpy()
-    Image.Width = Width;
-    Image.Height = Height;
-    Image.Channels = Channels;
+    memcpy(Image.Bytes.get(), FreeImage_GetBits(FIImage), FreeImage_GetMemorySize(FIImage));
 
-    if (Image.Bytes == nullptr) {
-        return NeoIL::NeoIL_LoadingStatus_UnsupportedFormat;
-    } else if (Image.Width < 1) {
+    Image.Width = FreeImage_GetWidth(FIImage);
+    Image.Height = FreeImage_GetHeight(FIImage);
+
+    if (Image.Width < 1) {
         return NeoIL::NeoIL_LoadingStatus_InvalidWidth;
     } else if (Image.Height < 1) {
         return NeoIL::NeoIL_LoadingStatus_InvalidHeight;
-    } else if (Image.Channels < 1 || Image.Channels > MaxChannels) {
+    }
+
+    Image.Channels = FreeImage_GetLine(FIImage) / FreeImage_GetWidth(FIImage);
+
+    if (Image.Channels < 1 || Image.Channels > MaxChannels) {
         return NeoIL::NeoIL_LoadingStatus_InvalidNumChannels;
     }
+
     return NeoIL::NeoIL_LoadingStatus_Complete;
 
 }
