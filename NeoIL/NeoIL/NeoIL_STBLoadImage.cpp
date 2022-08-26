@@ -28,4 +28,5 @@ NeoIL::LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size,
         return NeoIL::NeoIL_LoadingStatus_InvalidNumChannels;
     }
     return NeoIL::NeoIL_LoadingStatus_Complete;
+
 }
