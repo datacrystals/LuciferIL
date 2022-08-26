@@ -5,15 +5,28 @@
 
 #include <Lucifer.h>
 
-Lucifer::Lucifer::Lucifer() {
+
+
+namespace Lucifer {
+
+Lucifer::Lucifer() {
 
     FreeImage_Initialise();
     ilInit();
 
 }
 
-Lucifer::Lucifer::~Lucifer() {
+Lucifer::~Lucifer() {
 
     FreeImage_DeInitialise();
+
+}
+
+
+LoadingStatus Lucifer::Load(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
+    return Lucifer_Load(ImageData, Size, Image, MaxChannels);
+}
+
+
 
 }
