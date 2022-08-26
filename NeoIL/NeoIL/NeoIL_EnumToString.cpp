@@ -5,9 +5,9 @@
 
 #include <NeoIL_EnumToString.h>
 
+namespace NeoIL {
 
-
-std::string NeoIL::NeoIL_GetLoadingStatusString(NeoIL::LoadingStatus Status) {
+std::string NeoIL_GetLoadingStatusString(LoadingStatus Status) {
 
     if (Status == NeoIL_LoadingStatus_Complete) {
         return "NeoIL_LoadingStatus_Complete";
@@ -26,5 +26,7 @@ std::string NeoIL::NeoIL_GetLoadingStatusString(NeoIL::LoadingStatus Status) {
     }
 
     return "Enum Case Error";
+
+}
 
 }

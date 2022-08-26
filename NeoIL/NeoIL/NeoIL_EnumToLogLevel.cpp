@@ -5,9 +5,9 @@
 
 #include <NeoIL_EnumToLogLevel.h>
 
+namespace NeoIL {
 
-
-int NeoIL::NeoIL_GetLoadingStatusLevel(NeoIL::LoadingStatus Status) {
+int NeoIL_GetLoadingStatusLevel(LoadingStatus Status) {
 
     if (Status == NeoIL_LoadingStatus_Complete) {
         return 0;
@@ -26,5 +26,7 @@ int NeoIL::NeoIL_GetLoadingStatusLevel(NeoIL::LoadingStatus Status) {
     }
 
     return -1;
+
+}
 
 }

@@ -21,7 +21,7 @@ namespace NeoIL {
  * @param Status Enum returned by image loading functions.
  * @return int String containing name of enum.
  */
-int NeoIL_GetLoadingStatusLevel(NeoIL::LoadingStatus Status);
+int NeoIL_GetLoadingStatusLevel(LoadingStatus Status);
 
 
 
