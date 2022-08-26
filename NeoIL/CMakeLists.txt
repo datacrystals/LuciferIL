@@ -28,6 +28,8 @@ add_library(NeoIL
 target_include_directories(NeoIL
     PUBLIC
         ${PROJECT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/stb
+
     PRIVATE
         ${PROJECT_SOURCE_DIR}/NeoIL
         ${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/stb
