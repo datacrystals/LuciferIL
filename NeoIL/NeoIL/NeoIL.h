@@ -8,7 +8,12 @@
 // Std Lib
 #include <iostream>
 
+// Internal Lib
+#include <NeoIL/NeoIL_STBLoadImage.h>
+#include <NeoIL/NeoIL_FreeImageLoadImage.h>
+
 // Third-Party Lib
+#define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
 #include <FreeImage.h>
 
