@@ -2,6 +2,13 @@
 cmake_minimum_required(VERSION 3.5)
 project(NeoIL)
 
+
+# Include Image Libs
+include(${CMAKE_BUILD_UTILS_DIR}/STB.cmake)
+include(${CMAKE_BUILD_UTILS_DIR}/FreeImage.cmake)
+include(${CMAKE_BUILD_UTILS_DIR}/DevIL.cmake)
+
+# Setup Library Target
 add_library(NeoIL
 
     "NeoIL/NeoIL.cpp"
