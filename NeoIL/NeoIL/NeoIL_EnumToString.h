@@ -6,16 +6,22 @@
 #pragma once
 
 // Std Lib Includes
-#include <<string>
+#include <string>
 
 
 // Internal Includes
-#include <NeoIL_StatusEnum.h>
+#include <NeoIL_LoadingStatusEnum.h>
 
 
 namespace NeoIL {
 
-
+/**
+ * @brief Converts the loading status enum into a string that can be used for logging.
+ * 
+ * @param Status Enum returned by image loading functions.
+ * @return std::string String containing name of enum.
+ */
+std::string NeoIL_GetLoadingStatusString(NeoIL::LoadingStatus Status);
 
 
 
