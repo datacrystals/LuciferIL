@@ -10,15 +10,6 @@ option(ENABLE_DEVIL     "Enable or disable the use of DevIL"     ON)
 
 
 
-
-# Define CMake Paths
-set(LIB_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Third-Party")
-set(SRC_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Source")
-set(BIN_DIR "${CMAKE_CURRENT_SOURCE_DIR}/Binaries")
-
-
-
-
 # Include Image Libs
 if (Enable_STB)
     include(CMake/STB.cmake)
