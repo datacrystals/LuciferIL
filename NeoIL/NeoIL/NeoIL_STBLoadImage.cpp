@@ -3,16 +3,10 @@
 // Thomas Liao (2022)        //
 //---------------------------//
 
-#include <NeoIL.h>
+#include <NeoIL_STBLoadImage.h>
 
-NeoIL::NeoIL::NeoIL() {
+NeoIL::LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size, NeoIL::Image& Image) {
 
-    FreeImage_Initialise();
 
-}
-
-NeoIL::NeoIL::~NeoIL() {
-
-    FreeImage_DeInitialise();
 
 }
