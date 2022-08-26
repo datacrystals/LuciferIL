@@ -16,8 +16,7 @@ LoadingStatus Lucifer_STBLoad(unsigned char* ImageData, unsigned long Size, Imag
     int Width, Height, Channels;
     unsigned char* ImageBytes = stbi_load_from_memory(ImageData, Size, &Width, &Height, &Channels, 0);
     if (Image.Bytes == nullptr) {
-        std::string FailReason = std::string(stbi_failure_reason());
-        std::cout<<FailReason<<"\n";
+        std::cout<<stbi_failure_reason()<<"\n";
         return Lucifer_LoadingStatus_UnsupportedFormat;
     }
 
