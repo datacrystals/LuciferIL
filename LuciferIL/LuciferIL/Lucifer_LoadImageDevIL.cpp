@@ -18,8 +18,9 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Im
     ilGenImages(1, &DevILImageID);
     ilBindImage(&DevILImageID);
 
-    // Loa d Image
-    ilLoadL(unsigned char, ImageData, Size);
+    // Load Image
+    ILenum ImageFormat = ilDetermineTypeL(ImageData, Size);
+    ilLoadL(ImageFormat, ImageData, Size);
 
     // Unload And Destroy Image
     ilBindImage(0);
