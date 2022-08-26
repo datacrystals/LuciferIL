@@ -15,10 +15,12 @@ add_library(NeoIL
     "NeoIL/NeoIL.cpp"
     "NeoIL/NeoIL_StatusEnum.cpp"
     "NeoIL/NeoIL_ImageStruct.cpp"
+    "NeoIL/NeoIL_EnumToString.cpp"
     
     "NeoIL/NeoIL.h"
     "NeoIL/NeoIL_StatusEnum.h"
     "NeoIL/NeoIL_ImageStruct.h"
+    "NeoIL/NeoIL_EnumToString.h"
 
 )
 target_include_directories(NeoIL
