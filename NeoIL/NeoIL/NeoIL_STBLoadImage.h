@@ -5,40 +5,36 @@
 
 #pragma once
 
+
+// Standard Libs
 #include <iostream>
+#include <string>
 
-
-//#define STB_IMAGE_IMPLEMENTATION
+// External Libs
 #include <stb_image.h>
 
 #include <FreeImage.h>
+
+// Internal Libs
+#include <NeoIL/NeoIL_LoadingStatusEnum.h>
+#include <NeoIL/NeoIL_ImageStruct.h>
 
 
 namespace NeoIL {
 
 
-class NeoIL {
-
-private:
-
-
-
-public:
-
-    /**
-     * @brief Create new NeoIL instance, automatically initializes all required image loader functions.
-     * 
-     */
-    NeoIL();
-
-    /**
-     * @brief Shut down and destroy the NeoIL Instance.
-     * 
-     */
-    ~NeoIL();
+/**
+ * @brief Decodes image data in-memory.
+ * 
+ * @param ImageData Pointer to raw bytes (these could be read directly off of the disk)
+ * @param Size Size of the array
+ * @param Image Reference to the image to be updated
+ * @return NeoIL::LoadingStatus Status of loading
+ */
+NeoIL::LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size, NeoIL::Image& Image);
 
 
-};
+
 
 
 };
