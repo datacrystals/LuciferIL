@@ -3,16 +3,16 @@
 // Thomas Liao (2022)        //
 //---------------------------//
 
-#include <NeoIL_STBLoadImage.h>
+#include <NeoIL_FreeImageLoadImage.h>
 
-NeoIL::LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size, NeoIL::Image& Image, int MaxChannels) {
+NeoIL::LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long Size, NeoIL::Image& Image, int MaxChannels) {
 
     if (ImageData == nullptr) {
         return NeoIL::NeoIL_LoadingStatus_InvalidData;
     }
 
     int Width, Height, Channels;
-    unsigned char* ImageBytes = stbi_load_from_memory(ImageData, Size, &Width, &Height, &Channels, 0);
+    unsigned char* ImageBytes = FreeImagei_load_from_memory(ImageData, Size, &Width, &Height, &Channels, 0);
     Image.Bytes = std::make_unique<unsigned char*>(ImageBytes);
     Image.Width = Width;
     Image.Height = Height;
