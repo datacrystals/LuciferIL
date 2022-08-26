@@ -2,23 +2,10 @@ cmake_minimum_required(VERSION 3.5)
 project(NeoIL)
 
 
-# Configuration Options
-option(ENABLE_STB       "Enable or disable the use of STB_Image" ON)
-option(ENABLE_FREEIMAGE "Enable or disable the use of FreeImage" ON)
-option(ENABLE_DEVIL     "Enable or disable the use of DevIL"     ON)
-
-
-
 # Include Image Libs
-if (Enable_STB)
-    include(${PROJECT_SOURCE_DIR}CMake/STB.cmake)
-endif()
-if (ENABLE_FREEIMAGE)
-    include(${PROJECT_SOURCE_DIR}CMake/FreeImage.cmake)
-endif()
-if (Enable_DEVIL)
-    include(${PROJECT_SOURCE_DIR}CMake/DevIL.cmake)
-endif()
+include(${PROJECT_SOURCE_DIR}CMake/STB.cmake)
+include(${PROJECT_SOURCE_DIR}CMake/FreeImage.cmake)
+include(${PROJECT_SOURCE_DIR}CMake/DevIL.cmake)
 
 
 
@@ -37,12 +24,6 @@ target_include_directories(NeoIL
 )
 
 
-if (Enable_STB)
-    target_link_libraries(NeoIL STB)
-endif()
-if (ENABLE_FREEIMAGE)
-    target_link_libraries(NeoIL FreeImage)
-endif()
-if (Enable_DEVIL)
+target_link_libraries(NeoIL STB)
+target_link_libraries(NeoIL FreeImage)
 target_link_libraries(NeoIL DevIL)
-endif()
