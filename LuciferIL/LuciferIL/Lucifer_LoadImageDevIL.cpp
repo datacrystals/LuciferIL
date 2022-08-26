@@ -25,28 +25,28 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Im
     }
     ilLoadL(ImageFormat, ImageData, Size);
 
-    // Unload And Destroy Image
-    ilBindImage(0);
-    ilDeleteImage(DevILImageID);
+    
+    // Get Image Metadata
+    Image.Width    = ilGetInteger(IL_IMAGE_WIDTH);
+    Image.Height   = ilGetInteger(IL_IMAGE_HEIGHT);
+    Image.Channels = ilGetInteger(IL_IMAGE_CHANNELS);
+
+    if (Image.Width < 1) {
+        ilDeleteImage(DevILImageID);
+        return Lucifer_LoadingStatus_InvalidWidth;
+    } else if (Image.Height < 1) {
+        ilDeleteImage(DevILImageID);
+        return Lucifer_LoadingStatus_InvalidHeight;
+    }
+    if (Image.Channels < 1 || Image.Channels > MaxChannels) {
+        ilDeleteImage(DevILImageID);
+        return Lucifer_LoadingStatus_InvalidNumChannels;
+    }
 
 
-    // FIMEMORY* FIImageData = FreeImage_OpenMemory(ImageData, Size);
-    // FREE_IMAGE_FORMAT Format = FreeImage_GetFileTypeFromMemory(FIImageData);
 
-    // if (Format == FIF_UNKNOWN) {
-    //     FreeImage_CloseMemory(FIImageData);
-    //     return Lucifer_LoadingStatus_UnsupportedFormat;
-    // }
-
-
-    // FIBITMAP* FIImage = FreeImage_LoadFromMemory(Format, FIImageData);
-    // FreeImage_CloseMemory(FIImageData);
-
-    // int Width, Height, Line;
-    // Width  = FreeImage_GetWidth(FIImage);
-    // Height = FreeImage_GetHeight(FIImage);
-    // Line  = FreeImage_GetLine(FIImage);
-
+    // Memcpy Image Data Pointer
+    
     // if (FIImage == nullptr) {
     //     return Lucifer_LoadingStatus_UnsupportedFormat;
     // }    
@@ -54,26 +54,24 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Im
     // Image.Bytes.reset(new unsigned char[FreeImage_GetMemorySize(FIImage)]);
     // memcpy(Image.Bytes.get(), FreeImage_GetBits(FIImage), FreeImage_GetMemorySize(FIImage));
 
-    // Image.Width = Width;
-    // Image.Height = Height;
 
-    // if (Image.Width < 1) {
-    //     FreeImage_Unload(FIImage);
-    //     return Lucifer_LoadingStatus_InvalidWidth;
-    // } else if (Image.Height < 1) {
-    //     FreeImage_Unload(FIImage);
-    //     return Lucifer_LoadingStatus_InvalidHeight;
-    // }
 
-    // Image.Channels = Line / Width;
 
-    // if (Image.Channels < 1 || Image.Channels > MaxChannels) {
-    //     FreeImage_Unload(FIImage);
-    //     return Lucifer_LoadingStatus_InvalidNumChannels;
-    // }
+
+
 
     // FreeImage_Unload(FIImage);
-    // return Lucifer_LoadingStatus_Complete;
+
+
+
+
+
+
+    // Unload And Destroy Image
+    ilBindImage(0);
+    ilDeleteImage(DevILImageID);
+
+    return Lucifer_LoadingStatus_Complete;
 
 }
 
