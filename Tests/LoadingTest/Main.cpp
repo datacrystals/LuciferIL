@@ -56,7 +56,7 @@ struct ImageFileObject {
 };
 
 
-void TestLoad(const char* Path) {
+void TestLoadFreeImage(const char* Path) {
 
     // Load Image Path
     ImageFileObject Obj;
@@ -79,20 +79,46 @@ void TestLoad(const char* Path) {
 
 }
 
+void TestLoadSTB(const char* Path) {
+
+    // Load Image Path
+    ImageFileObject Obj;
+    Obj.LoadImage(Path);
+
+    // Load Image Into Memory
+    std::cout<<"Loading Image Into Memory Object\n";
+    NeoIL::Image Image;
+    NeoIL::LoadingStatus Status = NeoIL::NeoIL_STBLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
+
+    std::cout<<"Image Loading Status Is: "<<NeoIL::NeoIL_GetLoadingStatusString(Status)<<std::endl;
+
+    // List Image Information
+    std::cout<<"Image Is "<<Image.Width<<"px Wide\n";
+    std::cout<<"Image Is "<<Image.Height<<"px Tall\n";
+    std::cout<<"Image Has "<<Image.Channels<<" Color Channels\n";
+    
+    // Delete Image From buffer
+    free(Obj.MemoryBuffer);
+
+}
+
+
 int main() {
 
     // Init FreeImage
     FreeImage_Initialise();
 
     // Load Test.png
-    std::cout<<"Loading Image: 'Assets/Test.png' From Disk\n";
-    TestLoad("Assets/Test.png");
-    
+    std::cout<<"Loading Image: 'Assets/Test.png' From Disk With FreeImage\n";
+    TestLoadFreeImage("Assets/Test.png");
+    std::cout<<"Loading Image: 'Assets/Test.png' From Disk With STB\n";
+    TestLoadSTB("Assets/Test.png");
+
     // Load Test.png
-    std::cout<<"Loading Image: 'Assets/Test.jpg' From Disk\n";
-    TestLoad("Assets/Test.jpg");
-
-
+    std::cout<<"Loading Image: 'Assets/Test.jpg' From Disk With FreeImage\n";
+    TestLoadFreeImage("Assets/Test.jpg");
+    std::cout<<"Loading Image: 'Assets/Test.jpg' From Disk With STB\n";
+    TestLoadSTB("Assets/Test.jpg");
 
     // De-Init FreeImage
     FreeImage_DeInitialise();
