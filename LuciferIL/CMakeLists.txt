@@ -13,8 +13,8 @@ include(${PROJECT_SOURCE_DIR}/CMake/DevIL.cmake)
 add_library(Lucifer
 
     "LuciferIL/Lucifer.cpp"
-    "LuciferIL/Lucifer_STBLoadImage.cpp"
-    "LuciferIL/Lucifer_FreeImageLoadImage.cpp"
+    "LuciferIL/Lucifer_LoadImageSTB.cpp"
+    "LuciferIL/Lucifer_LoadImageFreeImage.cpp"
 
     "LuciferIL/Lucifer_LoadingStatusEnum.cpp"
     
@@ -26,8 +26,8 @@ add_library(Lucifer
 
 
     "LuciferIL/Lucifer.h"
-    "LuciferIL/Lucifer_STBLoadImage.h"
-    "LuciferIL/Lucifer_FreeImageLoadImage.h"
+    "LuciferIL/Lucifer_LoadImageSTB.h"
+    "LuciferIL/Lucifer_LoadImageFreeImage.h"
     
     "LuciferIL/Lucifer_LoadingStatusEnum.h"
     
