@@ -68,6 +68,7 @@ endif(BUILD_SHARED_LIBS)
 # various compiler stuff
 test_big_endian(WORDS_BIGENDIAN)
 
+## NEOIL Modifications ------------------------------
 
 # check availability of optional external libs
 find_package(PNG)
@@ -82,6 +83,15 @@ find_package(OpenEXR)
 find_package(LCMS2)
 find_package(MNG)
 # TODO: check for libmng, others?
+
+# Manually Include Dependencies
+add_subdirectory(Third-Party/libpng)
+set(PNG_FOUND 1);
+
+
+## END NEOIL Modifications ------------------------------
+
+
 
 # TODO: WDP requires Microsoft HD Photo Device Porting Kit 1.0
 set(IL_NO_WDP 1)
