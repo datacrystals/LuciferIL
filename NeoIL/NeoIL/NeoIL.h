@@ -3,6 +3,11 @@
 // Thomas Liao (2022)        //
 //---------------------------//
 
+#include <iostream>
+
+
+#include <stb_image.h>
+#include <FreeImage.h>
 
 
 namespace NeoIL {
@@ -11,7 +16,7 @@ class NeoIL {
 
 private:
 
-    
+
 
 public:
 
