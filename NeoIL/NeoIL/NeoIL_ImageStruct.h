@@ -22,6 +22,19 @@ public:
     unsigned long Size; /**<Number Of Bytes In Image Data*/
     unsigned char* ImageData; /**<Pointer to bytes containing the image data*/
 
+
+    /**
+     * @brief Handles initializing the image struct
+     * 
+     */
+    Image();
+
+    /**
+     * @brief Automatically free the image data - no manual free needed!
+     * 
+     */
+    ~Image();
+
 };
 
 
