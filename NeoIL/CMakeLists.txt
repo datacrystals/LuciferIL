@@ -14,6 +14,7 @@ add_library(NeoIL
 
     "NeoIL/NeoIL.cpp"
     "NeoIL/NeoIL_STBLoadImage.cpp"
+    "NeoIL/NeoIL_FreeImageLoadImage.cpp"
 
     "NeoIL/NeoIL_LoadingStatusEnum.cpp"
     
@@ -26,6 +27,7 @@ add_library(NeoIL
 
     "NeoIL/NeoIL.h"
     "NeoIL/NeoIL_STBLoadImage.h"
+    "NeoIL/NeoIL_FreeImageLoadImage.h"
     
     "NeoIL/NeoIL_LoadingStatusEnum.h"
     
