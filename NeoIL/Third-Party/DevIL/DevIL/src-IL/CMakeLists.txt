@@ -71,7 +71,7 @@ test_big_endian(WORDS_BIGENDIAN)
 ## NEOIL Modifications ------------------------------
 
 # check availability of optional external libs
-find_package(PNG)
+#find_package(PNG)
 find_package(TIFF)
 find_package(JPEG)
 find_package(Jasper)
@@ -87,6 +87,7 @@ find_package(MNG)
 # Manually Include Dependencies
 add_subdirectory(Third-Party/libpng)
 include_directories(Third-Party/libpng)
+target_include_directories(png PRIVATE Third-Party/libpng)
 set(PNG_FOUND 1)
 
 
