@@ -8,6 +8,7 @@
 Lucifer::Lucifer::Lucifer() {
 
     FreeImage_Initialise();
+    ilInit();
 
 }
 
