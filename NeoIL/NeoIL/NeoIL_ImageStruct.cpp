@@ -4,3 +4,12 @@
 //---------------------------//
 
 #include <NeoIL_ImageStruct.h>
+
+
+NeoIL::Image::Image() {
+
+}
+
+NeoIL::Image::~Image() {
+    
+}
