@@ -12,7 +12,8 @@ NeoIL::LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size,
     }
 
     int Width, Height, Channels;
-    Image.Bytes = stbi_load_from_memory(ImageData, Size, &Width, &Height, &Channels, 0);
+    unsigned char* ImageBytes = stbi_load_from_memory(ImageData, Size, &Width, &Height, &Channels, 0);
+    Image.Bytes = std::make_unique<unsigned char>(ImageBytes);
     Image.Width = Width;
     Image.Height = Height;
     Image.Channels = Channels;
