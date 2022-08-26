@@ -16,6 +16,7 @@
 
 namespace NeoIL {
 
+
 class NeoIL {
 
 private:
@@ -40,5 +41,6 @@ public:
 
 
 };
+
 
 };
