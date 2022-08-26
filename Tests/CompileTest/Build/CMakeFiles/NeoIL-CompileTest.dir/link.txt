@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/NeoIL-CompileTest.dir/Main.cpp.o -o ../Binaries/NeoIL-CompileTest  -lNeoIL 
