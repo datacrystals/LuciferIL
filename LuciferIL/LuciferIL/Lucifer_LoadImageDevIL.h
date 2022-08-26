@@ -12,7 +12,7 @@
 #include <cstring>
 
 // External Libs
-#include <FreeImage.h>
+#include <DevIL.h>
 
 // Internal Libs
 #include <LuciferIL/Lucifer_LoadingStatusEnum.h>
@@ -31,7 +31,7 @@ namespace Lucifer {
  * @param MaxChannels Maximum number of supported channels, defaults to 4
  * @return Lucifer::LoadingStatus Status of loading
  */
-LoadingStatus Lucifer_FreeImageLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels = 4);
+LoadingStatus Lucifer_DevILLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels = 4);
 
 
 

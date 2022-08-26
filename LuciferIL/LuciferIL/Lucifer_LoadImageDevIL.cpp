@@ -3,60 +3,60 @@
 // Thomas Liao (2022)    //
 //-----------------------//
 
-#include <Lucifer_LoadImageFreeImage.h>
+#include <Lucifer_LoadImageDevIL.h>
 
 namespace Lucifer {
 
-LoadingStatus Lucifer_FreeImageLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
+LoadingStatus Lucifer_DevILLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
 
     if (ImageData == nullptr) {
         return Lucifer_LoadingStatus_InvalidData;
     }
 
-    FIMEMORY* FIImageData = FreeImage_OpenMemory(ImageData, Size);
-    FREE_IMAGE_FORMAT Format = FreeImage_GetFileTypeFromMemory(FIImageData);
+    // FIMEMORY* FIImageData = FreeImage_OpenMemory(ImageData, Size);
+    // FREE_IMAGE_FORMAT Format = FreeImage_GetFileTypeFromMemory(FIImageData);
 
-    if (Format == FIF_UNKNOWN) {
-        FreeImage_CloseMemory(FIImageData);
-        return Lucifer_LoadingStatus_UnsupportedFormat;
-    }
+    // if (Format == FIF_UNKNOWN) {
+    //     FreeImage_CloseMemory(FIImageData);
+    //     return Lucifer_LoadingStatus_UnsupportedFormat;
+    // }
 
 
-    FIBITMAP* FIImage = FreeImage_LoadFromMemory(Format, FIImageData);
-    FreeImage_CloseMemory(FIImageData);
+    // FIBITMAP* FIImage = FreeImage_LoadFromMemory(Format, FIImageData);
+    // FreeImage_CloseMemory(FIImageData);
 
-    int Width, Height, Line;
-    Width  = FreeImage_GetWidth(FIImage);
-    Height = FreeImage_GetHeight(FIImage);
-    Line  = FreeImage_GetLine(FIImage);
+    // int Width, Height, Line;
+    // Width  = FreeImage_GetWidth(FIImage);
+    // Height = FreeImage_GetHeight(FIImage);
+    // Line  = FreeImage_GetLine(FIImage);
 
-    if (FIImage == nullptr) {
-        return Lucifer_LoadingStatus_UnsupportedFormat;
-    }    
+    // if (FIImage == nullptr) {
+    //     return Lucifer_LoadingStatus_UnsupportedFormat;
+    // }    
 
-    Image.Bytes.reset(new unsigned char[FreeImage_GetMemorySize(FIImage)]);
-    memcpy(Image.Bytes.get(), FreeImage_GetBits(FIImage), FreeImage_GetMemorySize(FIImage));
+    // Image.Bytes.reset(new unsigned char[FreeImage_GetMemorySize(FIImage)]);
+    // memcpy(Image.Bytes.get(), FreeImage_GetBits(FIImage), FreeImage_GetMemorySize(FIImage));
 
-    Image.Width = Width;
-    Image.Height = Height;
+    // Image.Width = Width;
+    // Image.Height = Height;
 
-    if (Image.Width < 1) {
-        FreeImage_Unload(FIImage);
-        return Lucifer_LoadingStatus_InvalidWidth;
-    } else if (Image.Height < 1) {
-        FreeImage_Unload(FIImage);
-        return Lucifer_LoadingStatus_InvalidHeight;
-    }
+    // if (Image.Width < 1) {
+    //     FreeImage_Unload(FIImage);
+    //     return Lucifer_LoadingStatus_InvalidWidth;
+    // } else if (Image.Height < 1) {
+    //     FreeImage_Unload(FIImage);
+    //     return Lucifer_LoadingStatus_InvalidHeight;
+    // }
 
-    Image.Channels = Line / Width;
+    // Image.Channels = Line / Width;
 
-    if (Image.Channels < 1 || Image.Channels > MaxChannels) {
-        FreeImage_Unload(FIImage);
-        return Lucifer_LoadingStatus_InvalidNumChannels;
-    }
+    // if (Image.Channels < 1 || Image.Channels > MaxChannels) {
+    //     FreeImage_Unload(FIImage);
+    //     return Lucifer_LoadingStatus_InvalidNumChannels;
+    // }
 
-    FreeImage_Unload(FIImage);
-    return Lucifer_LoadingStatus_Complete;
+    // FreeImage_Unload(FIImage);
+    // return Lucifer_LoadingStatus_Complete;
 
 }
 
