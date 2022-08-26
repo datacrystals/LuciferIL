@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Build with shared (.DLL .SO) libraries.
+BUILD_SHARED_LIBS:BOOL=ON
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -147,6 +150,21 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=NeoIL-CompileTest
 
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION:STATIC=3.18.0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=3
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_MINOR:STATIC=18
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+
+//Value Computed by CMake
+CMAKE_PROJECT_VERSION_TWEAK:STATIC=
+
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
@@ -210,6 +228,135 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
+DevIL_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL/Third-Party/DevIL/DevIL/src-IL
+
+//Value Computed by CMake
+DevIL_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+DevIL_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/NeoIL/Third-Party/DevIL/DevIL/src-IL
+
+//Value Computed by CMake
+FreeImagePlusTest_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test
+
+//Value Computed by CMake
+FreeImagePlusTest_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+FreeImagePlusTest_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test
+
+//Value Computed by CMake
+FreeImagePlus_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus
+
+//Value Computed by CMake
+FreeImagePlus_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+FreeImagePlus_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus
+
+//Value Computed by CMake
+FreeImageTest_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL/Third-Party/FreeImage/FreeImage/TestAPI
+
+//Value Computed by CMake
+FreeImageTest_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+FreeImageTest_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/NeoIL/Third-Party/FreeImage/FreeImage/TestAPI
+
+//Value Computed by CMake
+FreeImage_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL/Third-Party/FreeImage/FreeImage
+
+//Value Computed by CMake
+FreeImage_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+FreeImage_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/NeoIL/Third-Party/FreeImage/FreeImage
+
+//Value Computed by CMake
+ILUT_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL/Third-Party/DevIL/DevIL/src-ILUT
+
+//Value Computed by CMake
+ILUT_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+ILUT_LIB_DEPENDS:STATIC=general;IL;general;ILU;
+
+//Value Computed by CMake
+ILUT_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/NeoIL/Third-Party/DevIL/DevIL/src-ILUT
+
+//Value Computed by CMake
+ILU_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL/Third-Party/DevIL/DevIL/src-ILU
+
+//Value Computed by CMake
+ILU_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+ILU_LIB_DEPENDS:STATIC=general;IL;
+
+//Value Computed by CMake
+ILU_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/NeoIL/Third-Party/DevIL/DevIL/src-ILU
+
+//Value Computed by CMake
+ImageLib_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL/Third-Party/DevIL/DevIL
+
+//Value Computed by CMake
+ImageLib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+ImageLib_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/NeoIL/Third-Party/DevIL/DevIL
+
+//Path to a file.
+JASPER_INCLUDE_DIR:PATH=JASPER_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+JASPER_LIBRARY_DEBUG:FILEPATH=JASPER_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+JASPER_LIBRARY_RELEASE:FILEPATH=JASPER_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a file.
+JPEG_INCLUDE_DIR:PATH=JPEG_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+JPEG_LIBRARY_DEBUG:FILEPATH=JPEG_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+JPEG_LIBRARY_RELEASE:FILEPATH=JPEG_LIBRARY_RELEASE-NOTFOUND
+
+//The directory containing a CMake configuration file for LCMS2.
+LCMS2_DIR:PATH=LCMS2_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for MNG.
+MNG_DIR:PATH=MNG_DIR-NOTFOUND
+
+//Path to a library.
+NVCORE_LIBRARY:FILEPATH=NVCORE_LIBRARY-NOTFOUND
+
+//Path to a library.
+NVCORE_LIBRARY_DEBUG:FILEPATH=NVCORE_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+NVIMAGE_LIBRARY:FILEPATH=NVIMAGE_LIBRARY-NOTFOUND
+
+//Path to a library.
+NVIMAGE_LIBRARY_DEBUG:FILEPATH=NVIMAGE_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+NVMATH_LIBRARY:FILEPATH=NVMATH_LIBRARY-NOTFOUND
+
+//Path to a library.
+NVMATH_LIBRARY_DEBUG:FILEPATH=NVMATH_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a file.
+NVTT_INCLUDE_DIR:PATH=NVTT_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+NVTT_LIBRARY:FILEPATH=NVTT_LIBRARY-NOTFOUND
+
+//Path to a library.
+NVTT_LIBRARY_DEBUG:FILEPATH=NVTT_LIBRARY_DEBUG-NOTFOUND
+
+//Value Computed by CMake
 NeoIL-CompileTest_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build
 
 //Value Computed by CMake
@@ -217,6 +364,75 @@ NeoIL-CompileTest_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 NeoIL-CompileTest_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest
+
+//Value Computed by CMake
+NeoIL_BINARY_DIR:STATIC=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL
+
+//Value Computed by CMake
+NeoIL_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+NeoIL_LIB_DEPENDS:STATIC=general;FreeImage;general;IL;
+
+//Value Computed by CMake
+NeoIL_SOURCE_DIR:STATIC=/home/tliao/Documents/NeoIL/NeoIL
+
+//Path to a library.
+OPENEXR_Half_LIBRARY:FILEPATH=OPENEXR_Half_LIBRARY-NOTFOUND
+
+//Path to a library.
+OPENEXR_Half_LIBRARY_DEBUG:FILEPATH=OPENEXR_Half_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a file.
+OPENEXR_INCLUDE_DIR:PATH=OPENEXR_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+OPENEXR_Iex_LIBRARY:FILEPATH=OPENEXR_Iex_LIBRARY-NOTFOUND
+
+//Path to a library.
+OPENEXR_Iex_LIBRARY_DEBUG:FILEPATH=OPENEXR_Iex_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+OPENEXR_IlmImf_LIBRARY:FILEPATH=OPENEXR_IlmImf_LIBRARY-NOTFOUND
+
+//Path to a library.
+OPENEXR_IlmImf_LIBRARY_DEBUG:FILEPATH=OPENEXR_IlmImf_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+OPENEXR_IlmThread_LIBRARY:FILEPATH=OPENEXR_IlmThread_LIBRARY-NOTFOUND
+
+//Path to a library.
+OPENEXR_IlmThread_LIBRARY_DEBUG:FILEPATH=OPENEXR_IlmThread_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+PNG_LIBRARY_DEBUG:FILEPATH=PNG_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+PNG_LIBRARY_RELEASE:FILEPATH=PNG_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a file.
+PNG_PNG_INCLUDE_DIR:PATH=PNG_PNG_INCLUDE_DIR-NOTFOUND
+
+//Path to a file.
+TIFF_INCLUDE_DIR:PATH=TIFF_INCLUDE_DIR-NOTFOUND
+
+//Path to a library.
+TIFF_LIBRARY_DEBUG:FILEPATH=TIFF_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+TIFF_LIBRARY_RELEASE:FILEPATH=TIFF_LIBRARY_RELEASE-NOTFOUND
+
+//Path to a file.
+ZLIB_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
+
+//Path to a library.
+ZLIB_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libz.so
+
+//The directory containing a CMake configuration file for libSquish.
+libSquish_DIR:PATH=libSquish_DIR-NOTFOUND
 
 
 ########################
@@ -323,7 +539,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -366,4 +582,36 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding ZLIB
+FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/usr/lib/x86_64-linux-gnu/libz.so][/usr/include][v1.2.11()]
+//ADVANCED property for variable: JASPER_INCLUDE_DIR
+JASPER_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JASPER_LIBRARY_DEBUG
+JASPER_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JASPER_LIBRARY_RELEASE
+JASPER_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JPEG_INCLUDE_DIR
+JPEG_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JPEG_LIBRARY_DEBUG
+JPEG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: JPEG_LIBRARY_RELEASE
+JPEG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PNG_LIBRARY_DEBUG
+PNG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PNG_LIBRARY_RELEASE
+PNG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PNG_PNG_INCLUDE_DIR
+PNG_PNG_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TIFF_INCLUDE_DIR
+TIFF_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TIFF_LIBRARY_DEBUG
+TIFF_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: TIFF_LIBRARY_RELEASE
+TIFF_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_INCLUDE_DIR
+ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_DEBUG
+ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ZLIB_LIBRARY_RELEASE
+ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 

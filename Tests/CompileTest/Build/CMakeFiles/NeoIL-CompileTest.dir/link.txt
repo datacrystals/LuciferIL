@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/NeoIL-CompileTest.dir/Main.cpp.o -o ../Binaries/NeoIL-CompileTest  -Wl,-rpath,/home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries:/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL/Third-Party/DevIL/DevIL/lib/x64 ../Binaries/libNeoIL.so ../Binaries/libFreeImage.so NeoIL/Third-Party/DevIL/DevIL/lib/x64/libIL.so 

@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "../lib/x64/libILU.pdb"
+  "../lib/x64/libILU.so"
+  "CMakeFiles/ILU.dir/src/ilu_alloc.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_alloc.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_error.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_error.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_filter.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_filter.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_filter_rcg.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_filter_rcg.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_internal.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_internal.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_main.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_main.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_manip.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_manip.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_mipmap.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_mipmap.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_noise.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_noise.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_region.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_region.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_rotate.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_rotate.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_scale.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_scale.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_scale2d.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_scale2d.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_scale3d.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_scale3d.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_scaling.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_scaling.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_states.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_states.cpp.o.d"
+  "CMakeFiles/ILU.dir/src/ilu_utilities.cpp.o"
+  "CMakeFiles/ILU.dir/src/ilu_utilities.cpp.o.d"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/ILU.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
