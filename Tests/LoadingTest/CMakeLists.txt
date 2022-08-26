@@ -26,3 +26,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../NeoIL/ ${CMAKE_CURRENT_BINARY
 # Build Executable
 add_executable(NeoIL-CompileTest Main.cpp)
 target_link_libraries(NeoIL-CompileTest NeoIL)
+
+
+# Copy Assets
+file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/Assets/" DESTINATION "${BIN_DIR}/Assets")
