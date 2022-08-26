@@ -62,25 +62,16 @@ void TestLoad(const char* Path) {
     Obj.LoadImage(Path);
 
     // Load Image Into Memory
-    std::cout<<"Loading Image Into FreeImage Memory Object (FIMEMORY*)\n";
-    FIMEMORY* InMemoryData = FreeImage_OpenMemory(Obj.MemoryBuffer, Obj.Buffer.st_size);
-    
-    // Identifying Image Format
-    std::cout<<"Getting Image Format From FIMEMORY Object\n";
-    FREE_IMAGE_FORMAT Format = FreeImage_GetFileTypeFromMemory(InMemoryData);
-    std::cout<<"Identified Format To Be: "<<Format<<std::endl;
-
-    // Decode Image
-    std::cout<<"Decoding Image\n";
-    FIBITMAP* Image = FreeImage_LoadFromMemory(Format, InMemoryData);
+    std::cout<<"Loading Image Into Memory Object\n";
+    NeoIL::Image Image;
+    NeoIL::NeoIL_STBLoad(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
 
     // List Image Information
-    std::cout<<"Image Is "<<FreeImage_GetWidth(Image)<<"px Wide\n";
-    std::cout<<"Image Is "<<FreeImage_GetHeight(Image)<<"px Tall\n";
-    std::cout<<"Image Has "<<FreeImage_GetLine(Image) / FreeImage_GetWidth(Image)<<" Color Channels\n";
+    std::cout<<"Image Is "<<Image.Width<<"px Wide\n";
+    std::cout<<"Image Is "<<Image.Height<<"px Tall\n";
+    std::cout<<"Image Has "<<Image.Channels<<" Color Channels\n";
     
-    // Delete Image From Memory
-    FreeImage_CloseMemory(InMemoryData);
+    // Delete Image From buffer
     free(Obj.MemoryBuffer);
 
 }
