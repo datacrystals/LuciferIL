@@ -54,15 +54,8 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Im
         return Lucifer_LoadingStatus_UnsupportedFormat;
     }    
 
-    Image.Bytes.reset(new unsigned char[FreeImage_GetMemorySize(FIImage)]);
-    memcpy(Image.Bytes.get(), FreeImage_GetBits(FIImage), FreeImage_GetMemorySize(FIImage));
-
-
-
-
-
-
-
+    Image.Bytes.reset(new unsigned char[ImageSize]);
+    memcpy(Image.Bytes.get(), ImageBytes, ImageSize);
 
 
     // Unload And Destroy Image
