@@ -23,7 +23,7 @@ NeoIL::LoadingStatus NeoIL_FreeImageLoad(unsigned char* ImageData, unsigned long
     FreeImage_CloseMemory(FIImageData);
 
 
-    if (FIBITMAP == nullptr) {
+    if (FIImage == nullptr) {
         return NeoIL::NeoIL_LoadingStatus_UnsupportedFormat;
     }    
 
