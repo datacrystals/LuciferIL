@@ -181,8 +181,14 @@ CMakeFiles/NeoIL-CompileTest.dir/Main.cpp.o: ../Main.cpp \
   /usr/include/c++/11/bits/ostream.tcc \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
-  /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL.h
+  /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL.h \
+  /home/tliao/Documents/NeoIL/NeoIL/Third-Party/FreeImage/FreeImage/Source/FreeImage.h \
+  /usr/include/inttypes.h
 
+
+/usr/include/inttypes.h:
+
+/home/tliao/Documents/NeoIL/NeoIL/Third-Party/FreeImage/FreeImage/Source/FreeImage.h:
 
 /usr/include/c++/11/bits/istream.tcc:
 
