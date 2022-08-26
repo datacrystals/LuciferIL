@@ -4,9 +4,9 @@ project(NeoIL)
 
 
 # Include Image Libs
-include(${CMAKE_BUILD_UTILS_DIR}/STB.cmake)
-include(${CMAKE_BUILD_UTILS_DIR}/FreeImage.cmake)
-include(${CMAKE_BUILD_UTILS_DIR}/DevIL.cmake)
+include(CMake/STB.cmake)
+include(CMake/FreeImage.cmake)
+include(CMake/DevIL.cmake)
 
 # Setup Library Target
 add_library(NeoIL
