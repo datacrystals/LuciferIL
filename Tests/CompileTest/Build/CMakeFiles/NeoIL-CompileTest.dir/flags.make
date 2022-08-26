@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tliao/Documents/NeoIL/NeoIL
+CXX_INCLUDES = -I/home/tliao/Documents/NeoIL/Tests/CompileTest/../../NeoIL
 
 CXX_FLAGS = 
 
