@@ -10,7 +10,7 @@
 
 
 // Internal Includes
-#include <LuciferIL/Lucifer_LoadingStatusEnum.h>
+#include <Lucifer_LoadingStatusEnum.h>
 
 
 namespace Lucifer {
