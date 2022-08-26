@@ -11,13 +11,13 @@ option(ENABLE_DEVIL     "Enable or disable the use of DevIL"     ON)
 
 # Include Image Libs
 if (Enable_STB)
-    include(CMake/STB.cmake)
+    include(${PROJECT_SOURCE_DIR}CMake/STB.cmake)
 endif()
 if (ENABLE_FREEIMAGE)
-    include(CMake/FreeImage.cmake)
+    include(${PROJECT_SOURCE_DIR}CMake/FreeImage.cmake)
 endif()
 if (Enable_DEVIL)
-    include(CMake/DevIL.cmake)
+    include(${PROJECT_SOURCE_DIR}CMake/DevIL.cmake)
 endif()
 
 
