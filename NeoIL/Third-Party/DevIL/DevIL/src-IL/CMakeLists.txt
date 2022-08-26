@@ -86,7 +86,8 @@ find_package(MNG)
 
 # Manually Include Dependencies
 add_subdirectory(Third-Party/libpng)
-set(PNG_FOUND 1);
+include_directories(Third-Party/libpng)
+set(PNG_FOUND 1)
 
 
 ## END NEOIL Modifications ------------------------------
