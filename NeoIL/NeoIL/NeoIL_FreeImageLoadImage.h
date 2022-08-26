@@ -8,6 +8,8 @@
 
 // Standard Libs
 #include <iostream>
+#include <stdlib.h>
+#include <memory>
 
 // External Libs
 #include <FreeImage.h>
