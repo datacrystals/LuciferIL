@@ -26,7 +26,7 @@ target_include_directories(png PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/L
 # add_library(DEVIL_DEPENDENCIES SHARED ${DEVIL_DEP_FILES})
 # target_link_libraries(IL DEVIL_DEPENDENCIES)
 
-#set(PNG_FOUND 1)
+set(PNG_FOUND 1)
 
 message("Completed Setting Up LibPNG For DevIL")
 
