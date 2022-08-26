@@ -244,7 +244,7 @@ CMakeFiles/NeoIL-CompileTest.dir/all: NeoIL/Third-Party/DevIL/DevIL/src-IL/CMake
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NeoIL-CompileTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 90
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 91
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NeoIL-CompileTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 0
 .PHONY : CMakeFiles/NeoIL-CompileTest.dir/rule
@@ -266,12 +266,12 @@ NeoIL/CMakeFiles/NeoIL.dir/all: NeoIL/Third-Party/FreeImage/FreeImage/CMakeFiles
 NeoIL/CMakeFiles/NeoIL.dir/all: NeoIL/Third-Party/DevIL/DevIL/src-IL/CMakeFiles/IL.dir/all
 	$(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/depend
 	$(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num= "Built target NeoIL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=99 "Built target NeoIL"
 .PHONY : NeoIL/CMakeFiles/NeoIL.dir/all
 
 # Build rule for subdir invocation for target.
 NeoIL/CMakeFiles/NeoIL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 89
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 90
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NeoIL/CMakeFiles/NeoIL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 0
 .PHONY : NeoIL/CMakeFiles/NeoIL.dir/rule
@@ -318,7 +318,7 @@ NeoIL/Third-Party/FreeImage/FreeImage/CMakeFiles/FreeImage.dir/clean:
 NeoIL/Third-Party/FreeImage/FreeImage/TestAPI/CMakeFiles/FreeImageTest.dir/all: NeoIL/Third-Party/FreeImage/FreeImage/CMakeFiles/FreeImage.dir/all
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/FreeImage/FreeImage/TestAPI/CMakeFiles/FreeImageTest.dir/build.make NeoIL/Third-Party/FreeImage/FreeImage/TestAPI/CMakeFiles/FreeImageTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/FreeImage/FreeImage/TestAPI/CMakeFiles/FreeImageTest.dir/build.make NeoIL/Third-Party/FreeImage/FreeImage/TestAPI/CMakeFiles/FreeImageTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=80,81 "Built target FreeImageTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=79,80 "Built target FreeImageTest"
 .PHONY : NeoIL/Third-Party/FreeImage/FreeImage/TestAPI/CMakeFiles/FreeImageTest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -344,12 +344,12 @@ NeoIL/Third-Party/FreeImage/FreeImage/TestAPI/CMakeFiles/FreeImageTest.dir/clean
 NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/all: NeoIL/Third-Party/FreeImage/FreeImage/CMakeFiles/FreeImage.dir/all
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/build.make NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/depend
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/build.make NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=77,78 "Built target FreeImagePlus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=77 "Built target FreeImagePlus"
 .PHONY : NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/all
 
 # Build rule for subdir invocation for target.
 NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 78
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 77
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 0
 .PHONY : NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/rule
@@ -371,12 +371,12 @@ NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/Free
 NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/FreeImagePlusTest.dir/all: NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/CMakeFiles/FreeImagePlus.dir/all
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/FreeImagePlusTest.dir/build.make NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/FreeImagePlusTest.dir/depend
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/FreeImagePlusTest.dir/build.make NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/FreeImagePlusTest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=79 "Built target FreeImagePlusTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=78 "Built target FreeImagePlusTest"
 .PHONY : NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/FreeImagePlusTest.dir/all
 
 # Build rule for subdir invocation for target.
 NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/FreeImagePlusTest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 79
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 78
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/FreeImagePlusTest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles 0
 .PHONY : NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/FreeImagePlusTest.dir/rule
@@ -397,7 +397,7 @@ NeoIL/Third-Party/FreeImage/FreeImage/Wrapper/FreeImagePlus/test/CMakeFiles/Free
 NeoIL/Third-Party/DevIL/DevIL/src-IL/CMakeFiles/IL.dir/all:
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/DevIL/DevIL/src-IL/CMakeFiles/IL.dir/build.make NeoIL/Third-Party/DevIL/DevIL/src-IL/CMakeFiles/IL.dir/depend
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/DevIL/DevIL/src-IL/CMakeFiles/IL.dir/build.make NeoIL/Third-Party/DevIL/DevIL/src-IL/CMakeFiles/IL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=82,83,84,85,86,87,88,89,90,91,92,93,94 "Built target IL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=81,82,83,84,85,86,87,88,89,90,91,92,93 "Built target IL"
 .PHONY : NeoIL/Third-Party/DevIL/DevIL/src-IL/CMakeFiles/IL.dir/all
 
 # Build rule for subdir invocation for target.
@@ -423,7 +423,7 @@ NeoIL/Third-Party/DevIL/DevIL/src-IL/CMakeFiles/IL.dir/clean:
 NeoIL/Third-Party/DevIL/DevIL/src-ILU/CMakeFiles/ILU.dir/all: NeoIL/Third-Party/DevIL/DevIL/src-IL/CMakeFiles/IL.dir/all
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/DevIL/DevIL/src-ILU/CMakeFiles/ILU.dir/build.make NeoIL/Third-Party/DevIL/DevIL/src-ILU/CMakeFiles/ILU.dir/depend
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/DevIL/DevIL/src-ILU/CMakeFiles/ILU.dir/build.make NeoIL/Third-Party/DevIL/DevIL/src-ILU/CMakeFiles/ILU.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=95,96,97 "Built target ILU"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=94,95,96 "Built target ILU"
 .PHONY : NeoIL/Third-Party/DevIL/DevIL/src-ILU/CMakeFiles/ILU.dir/all
 
 # Build rule for subdir invocation for target.
@@ -450,7 +450,7 @@ NeoIL/Third-Party/DevIL/DevIL/src-ILUT/CMakeFiles/ILUT.dir/all: NeoIL/Third-Part
 NeoIL/Third-Party/DevIL/DevIL/src-ILUT/CMakeFiles/ILUT.dir/all: NeoIL/Third-Party/DevIL/DevIL/src-ILU/CMakeFiles/ILU.dir/all
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/DevIL/DevIL/src-ILUT/CMakeFiles/ILUT.dir/build.make NeoIL/Third-Party/DevIL/DevIL/src-ILUT/CMakeFiles/ILUT.dir/depend
 	$(MAKE) $(MAKESILENT) -f NeoIL/Third-Party/DevIL/DevIL/src-ILUT/CMakeFiles/ILUT.dir/build.make NeoIL/Third-Party/DevIL/DevIL/src-ILUT/CMakeFiles/ILUT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=98,99 "Built target ILUT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=97,98 "Built target ILUT"
 .PHONY : NeoIL/Third-Party/DevIL/DevIL/src-ILUT/CMakeFiles/ILUT.dir/all
 
 # Build rule for subdir invocation for target.

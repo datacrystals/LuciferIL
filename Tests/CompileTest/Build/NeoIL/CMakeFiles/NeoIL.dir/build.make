@@ -83,19 +83,83 @@ NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeoIL.dir/NeoIL/NeoIL.cpp.s"
 	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL.cpp -o CMakeFiles/NeoIL.dir/NeoIL/NeoIL.cpp.s
 
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o: NeoIL/CMakeFiles/NeoIL.dir/flags.make
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o: /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_LoadingStatusEnum.cpp
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o: NeoIL/CMakeFiles/NeoIL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o -MF CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o.d -o CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o -c /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_LoadingStatusEnum.cpp
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.i"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_LoadingStatusEnum.cpp > CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.i
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.s"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_LoadingStatusEnum.cpp -o CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.s
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o: NeoIL/CMakeFiles/NeoIL.dir/flags.make
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o: /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_ImageStruct.cpp
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o: NeoIL/CMakeFiles/NeoIL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o -MF CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o.d -o CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o -c /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_ImageStruct.cpp
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.i"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_ImageStruct.cpp > CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.i
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.s"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_ImageStruct.cpp -o CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.s
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o: NeoIL/CMakeFiles/NeoIL.dir/flags.make
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o: /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_EnumToString.cpp
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o: NeoIL/CMakeFiles/NeoIL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o -MF CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o.d -o CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o -c /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_EnumToString.cpp
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.i"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_EnumToString.cpp > CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.i
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.s"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_EnumToString.cpp -o CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.s
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o: NeoIL/CMakeFiles/NeoIL.dir/flags.make
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o: /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_EnumToLogLevel.cpp
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o: NeoIL/CMakeFiles/NeoIL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o -MF CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o.d -o CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o -c /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_EnumToLogLevel.cpp
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.i"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_EnumToLogLevel.cpp > CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.i
+
+NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.s"
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tliao/Documents/NeoIL/NeoIL/NeoIL/NeoIL_EnumToLogLevel.cpp -o CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.s
+
 # Object files for target NeoIL
 NeoIL_OBJECTS = \
-"CMakeFiles/NeoIL.dir/NeoIL/NeoIL.cpp.o"
+"CMakeFiles/NeoIL.dir/NeoIL/NeoIL.cpp.o" \
+"CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o" \
+"CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o" \
+"CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o" \
+"CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o"
 
 # External object files for target NeoIL
 NeoIL_EXTERNAL_OBJECTS =
 
 /home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so: NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL.cpp.o
+/home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so: NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o
+/home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so: NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o
+/home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so: NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o
+/home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so: NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o
 /home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so: NeoIL/CMakeFiles/NeoIL.dir/build.make
 /home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so: /home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libFreeImage.so
 /home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so: NeoIL/Third-Party/DevIL/DevIL/lib/x64/libIL.so
 /home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so: NeoIL/CMakeFiles/NeoIL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tliao/Documents/NeoIL/Tests/CompileTest/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library /home/tliao/Documents/NeoIL/Tests/CompileTest/Binaries/libNeoIL.so"
 	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build/NeoIL && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NeoIL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

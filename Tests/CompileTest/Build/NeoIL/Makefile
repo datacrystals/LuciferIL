@@ -199,6 +199,102 @@ NeoIL/NeoIL.cpp.s:
 	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL.cpp.s
 .PHONY : NeoIL/NeoIL.cpp.s
 
+NeoIL/NeoIL_EnumToLogLevel.o: NeoIL/NeoIL_EnumToLogLevel.cpp.o
+.PHONY : NeoIL/NeoIL_EnumToLogLevel.o
+
+# target to build an object file
+NeoIL/NeoIL_EnumToLogLevel.cpp.o:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.o
+.PHONY : NeoIL/NeoIL_EnumToLogLevel.cpp.o
+
+NeoIL/NeoIL_EnumToLogLevel.i: NeoIL/NeoIL_EnumToLogLevel.cpp.i
+.PHONY : NeoIL/NeoIL_EnumToLogLevel.i
+
+# target to preprocess a source file
+NeoIL/NeoIL_EnumToLogLevel.cpp.i:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.i
+.PHONY : NeoIL/NeoIL_EnumToLogLevel.cpp.i
+
+NeoIL/NeoIL_EnumToLogLevel.s: NeoIL/NeoIL_EnumToLogLevel.cpp.s
+.PHONY : NeoIL/NeoIL_EnumToLogLevel.s
+
+# target to generate assembly for a file
+NeoIL/NeoIL_EnumToLogLevel.cpp.s:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToLogLevel.cpp.s
+.PHONY : NeoIL/NeoIL_EnumToLogLevel.cpp.s
+
+NeoIL/NeoIL_EnumToString.o: NeoIL/NeoIL_EnumToString.cpp.o
+.PHONY : NeoIL/NeoIL_EnumToString.o
+
+# target to build an object file
+NeoIL/NeoIL_EnumToString.cpp.o:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.o
+.PHONY : NeoIL/NeoIL_EnumToString.cpp.o
+
+NeoIL/NeoIL_EnumToString.i: NeoIL/NeoIL_EnumToString.cpp.i
+.PHONY : NeoIL/NeoIL_EnumToString.i
+
+# target to preprocess a source file
+NeoIL/NeoIL_EnumToString.cpp.i:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.i
+.PHONY : NeoIL/NeoIL_EnumToString.cpp.i
+
+NeoIL/NeoIL_EnumToString.s: NeoIL/NeoIL_EnumToString.cpp.s
+.PHONY : NeoIL/NeoIL_EnumToString.s
+
+# target to generate assembly for a file
+NeoIL/NeoIL_EnumToString.cpp.s:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_EnumToString.cpp.s
+.PHONY : NeoIL/NeoIL_EnumToString.cpp.s
+
+NeoIL/NeoIL_ImageStruct.o: NeoIL/NeoIL_ImageStruct.cpp.o
+.PHONY : NeoIL/NeoIL_ImageStruct.o
+
+# target to build an object file
+NeoIL/NeoIL_ImageStruct.cpp.o:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.o
+.PHONY : NeoIL/NeoIL_ImageStruct.cpp.o
+
+NeoIL/NeoIL_ImageStruct.i: NeoIL/NeoIL_ImageStruct.cpp.i
+.PHONY : NeoIL/NeoIL_ImageStruct.i
+
+# target to preprocess a source file
+NeoIL/NeoIL_ImageStruct.cpp.i:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.i
+.PHONY : NeoIL/NeoIL_ImageStruct.cpp.i
+
+NeoIL/NeoIL_ImageStruct.s: NeoIL/NeoIL_ImageStruct.cpp.s
+.PHONY : NeoIL/NeoIL_ImageStruct.s
+
+# target to generate assembly for a file
+NeoIL/NeoIL_ImageStruct.cpp.s:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_ImageStruct.cpp.s
+.PHONY : NeoIL/NeoIL_ImageStruct.cpp.s
+
+NeoIL/NeoIL_LoadingStatusEnum.o: NeoIL/NeoIL_LoadingStatusEnum.cpp.o
+.PHONY : NeoIL/NeoIL_LoadingStatusEnum.o
+
+# target to build an object file
+NeoIL/NeoIL_LoadingStatusEnum.cpp.o:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.o
+.PHONY : NeoIL/NeoIL_LoadingStatusEnum.cpp.o
+
+NeoIL/NeoIL_LoadingStatusEnum.i: NeoIL/NeoIL_LoadingStatusEnum.cpp.i
+.PHONY : NeoIL/NeoIL_LoadingStatusEnum.i
+
+# target to preprocess a source file
+NeoIL/NeoIL_LoadingStatusEnum.cpp.i:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.i
+.PHONY : NeoIL/NeoIL_LoadingStatusEnum.cpp.i
+
+NeoIL/NeoIL_LoadingStatusEnum.s: NeoIL/NeoIL_LoadingStatusEnum.cpp.s
+.PHONY : NeoIL/NeoIL_LoadingStatusEnum.s
+
+# target to generate assembly for a file
+NeoIL/NeoIL_LoadingStatusEnum.cpp.s:
+	cd /home/tliao/Documents/NeoIL/Tests/CompileTest/Build && $(MAKE) $(MAKESILENT) -f NeoIL/CMakeFiles/NeoIL.dir/build.make NeoIL/CMakeFiles/NeoIL.dir/NeoIL/NeoIL_LoadingStatusEnum.cpp.s
+.PHONY : NeoIL/NeoIL_LoadingStatusEnum.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -215,6 +311,18 @@ help:
 	@echo "... NeoIL/NeoIL.o"
 	@echo "... NeoIL/NeoIL.i"
 	@echo "... NeoIL/NeoIL.s"
+	@echo "... NeoIL/NeoIL_EnumToLogLevel.o"
+	@echo "... NeoIL/NeoIL_EnumToLogLevel.i"
+	@echo "... NeoIL/NeoIL_EnumToLogLevel.s"
+	@echo "... NeoIL/NeoIL_EnumToString.o"
+	@echo "... NeoIL/NeoIL_EnumToString.i"
+	@echo "... NeoIL/NeoIL_EnumToString.s"
+	@echo "... NeoIL/NeoIL_ImageStruct.o"
+	@echo "... NeoIL/NeoIL_ImageStruct.i"
+	@echo "... NeoIL/NeoIL_ImageStruct.s"
+	@echo "... NeoIL/NeoIL_LoadingStatusEnum.o"
+	@echo "... NeoIL/NeoIL_LoadingStatusEnum.i"
+	@echo "... NeoIL/NeoIL_LoadingStatusEnum.s"
 .PHONY : help
 
 
