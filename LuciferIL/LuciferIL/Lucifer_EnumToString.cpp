@@ -3,7 +3,7 @@
 // Thomas Liao (2022)    //
 //-----------------------//
 
-#include <LuciferIL/Lucifer_EnumToString.h>
+#include <Lucifer_EnumToString.h>
 
 namespace Lucifer {
 
