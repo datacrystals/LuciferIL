@@ -12,7 +12,7 @@
 #include <cstring>
 
 // External Libs
-#include <IL/devil_cpp_wrapper.hpp>
+#include <IL/il.h>
 
 // Internal Libs
 #include <LuciferIL/Lucifer_LoadingStatusEnum.h>
