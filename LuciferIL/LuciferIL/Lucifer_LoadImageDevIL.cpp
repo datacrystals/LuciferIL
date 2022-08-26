@@ -20,6 +20,9 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Im
 
     // Load Image
     ILenum ImageFormat = ilDetermineTypeL(ImageData, Size);
+    if (ImageFormat == IL_TYPE_UNKNOWN) {
+        return Lucifer_LoadingStatus_UnsupportedFormat;
+    }
     ilLoadL(ImageFormat, ImageData, Size);
 
     // Unload And Destroy Image
