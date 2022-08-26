@@ -15,8 +15,8 @@
 #include <FreeImage.h>
 
 // Internal Libs
-#include <Lucifer_LoadingStatusEnum.h>
-#include <Lucifer_ImageStruct.h>
+#include <LuciferIL/Lucifer_LoadingStatusEnum.h>
+#include <LuciferIL/Lucifer_ImageStruct.h>
 
 
 namespace Lucifer {
