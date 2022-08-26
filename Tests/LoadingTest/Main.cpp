@@ -138,12 +138,16 @@ int main() {
     TestLoadFreeImage("Assets/Test.png");
     std::cout<<"Loading Image: 'Assets/Test.png' From Disk With STB\n";
     TestLoadSTB("Assets/Test.png");
+    std::cout<<"Loading Image: 'Assets/Test.png' From Disk With DevIL\n";
+    TestLoadDevIL("Assets/Test.png");
 
     // Load Test.png
     std::cout<<"Loading Image: 'Assets/Test.jpg' From Disk With FreeImage\n";
     TestLoadFreeImage("Assets/Test.jpg");
     std::cout<<"Loading Image: 'Assets/Test.jpg' From Disk With STB\n";
     TestLoadSTB("Assets/Test.jpg");
+    std::cout<<"Loading Image: 'Assets/Test.jpg' From Disk With DevIL\n";
+    TestLoadDevIL("Assets/Test.jpg");
 
     // De-Init FreeImage
     FreeImage_DeInitialise();
