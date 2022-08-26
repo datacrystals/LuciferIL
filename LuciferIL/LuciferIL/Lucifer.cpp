@@ -3,7 +3,7 @@
 // Thomas Liao (2022)        //
 //---------------------------//
 
-#include <LuciferIL/Lucifer.h>
+#include <Lucifer.h>
 
 Lucifer::Lucifer::Lucifer() {
 

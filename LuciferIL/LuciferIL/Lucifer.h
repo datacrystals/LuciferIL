@@ -9,8 +9,8 @@
 #include <iostream>
 
 // Internal Lib
-#include <Lucifer_LoadImageFreeImage.h>
-#include <Lucifer_LoadImageSTB.h>
+#include <LuciferIL/Lucifer_LoadImageSTB.h>
+#include <LuciferIL/Lucifer_LoadImageFreeImage.h>
 
 // Third-Party Lib
 #define STB_IMAGE_IMPLEMENTATION
