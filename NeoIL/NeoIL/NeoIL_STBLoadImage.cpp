@@ -5,17 +5,19 @@
 
 #include <NeoIL_STBLoadImage.h>
 
-NeoIL::LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size, NeoIL::Image& Image, int MaxChannels) {
+namespace NeoIL {
+
+LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
 
     if (ImageData == nullptr) {
-        return NeoIL::NeoIL_LoadingStatus_InvalidData;
+        return NeoIL_LoadingStatus_InvalidData;
     }
 
     int Width, Height, Channels;
     unsigned char* ImageBytes = stbi_load_from_memory(ImageData, Size, &Width, &Height, &Channels, 0);
 
     if (Image.Bytes == nullptr) {
-        return NeoIL::NeoIL_LoadingStatus_UnsupportedFormat;
+        return NeoIL_LoadingStatus_UnsupportedFormat;
     }
 
     unsigned long ImageLength = strlen((const char*)ImageBytes);
@@ -30,12 +32,14 @@ NeoIL::LoadingStatus NeoIL_STBLoad(unsigned char* ImageData, unsigned long Size,
     
 
     if (Image.Width < 1) {
-        return NeoIL::NeoIL_LoadingStatus_InvalidWidth;
+        return NeoIL_LoadingStatus_InvalidWidth;
     } else if (Image.Height < 1) {
-        return NeoIL::NeoIL_LoadingStatus_InvalidHeight;
+        return NeoIL_LoadingStatus_InvalidHeight;
     } else if (Image.Channels < 1 || Image.Channels > MaxChannels) {
-        return NeoIL::NeoIL_LoadingStatus_InvalidNumChannels;
+        return NeoIL_LoadingStatus_InvalidNumChannels;
     }
-    return NeoIL::NeoIL_LoadingStatus_Complete;
+    return NeoIL_LoadingStatus_Complete;
+
+}
 
 }
