@@ -26,7 +26,6 @@ set(CMAKE_INSTALL_PREFIX ${BIN_DIR})
 # Include NeoIL
 get_filename_component(NEOIL_DIR ../../NeoIL/ ABSOLUTE)
 include_directories(${NEOIL_DIR})
-message(${NEOIL_DIR})
 
 
 # Build Executable
