@@ -3,4 +3,4 @@
 // Thomas Liao (2022)        //
 //---------------------------//
 
-#include <NeoIL_StatusEnum.h>
+#include <NeoIL_LoadingStatusEnum.h>
