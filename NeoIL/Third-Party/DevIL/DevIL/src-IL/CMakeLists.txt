@@ -153,6 +153,7 @@ if(LIBSQUISH_FOUND)
 else(LIBSQUISH_FOUND)
     set(IL_USE_DXTC_SQUISH 0)
 endif(LIBSQUISH_FOUND)
+set(IL_USE_DXTC_SQUISH 0)
 
 # Sets the output folders
 set(LIBDIR "../lib/")
