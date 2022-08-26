@@ -5,13 +5,11 @@
 
 #pragma once
 
+// Std Lib
 #include <iostream>
 
-#ifndef STB_IMAGE_IMPLEMENTATION
-    #define STB_IMAGE_IMPLEMENTATION
-#endif
+// Third-Party Lib
 #include <stb_image.h>
-
 #include <FreeImage.h>
 
 
