@@ -39,11 +39,12 @@ add_library(Lucifer
 )
 target_include_directories(Lucifer
     PUBLIC
-        ${PROJECT_SOURCE_DIR}
+        ${PROJECT_SOURCE_DIR}/
 
     PRIVATE
-        ${PROJECT_SOURCE_DIR}/LuciferIL
-        ${CMAKE_CURRENT_SOURCE_DIR}/Third-Party/stb
+        ${PROJECT_SOURCE_DIR}/
+        ${PROJECT_SOURCE_DIR}/LuciferIL/
+        ${PROJECT_SOURCE_DIR}/Third-Party/stb/
 )
 
 
