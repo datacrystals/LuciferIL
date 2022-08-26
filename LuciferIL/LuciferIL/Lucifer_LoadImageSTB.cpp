@@ -3,8 +3,9 @@
 // Thomas Liao (2022)        //
 //---------------------------//
 
-#include <LuciferIL/Lucifer_STBLoadImage.h>
-#include <iostream>
+#include <LuciferIL/Lucifer_LoadImageSTB.h>
+
+
 namespace Lucifer {
 
 LoadingStatus Lucifer_STBLoad(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
