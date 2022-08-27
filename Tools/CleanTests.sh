@@ -11,4 +11,9 @@ cd LoadingTest
 bash Clean.sh
 cd ..
 
+cd WritingTest
+bash Clean.sh
+cd ..
+
+
 cd ../Tools
