@@ -20,7 +20,7 @@ endforeach( OUTPUTCONFIG CMAKE_CONFIGURATION_TYPES )
 set(CMAKE_INSTALL_PREFIX ${BIN_DIR})
 
 # Include Lucifer
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../LuciferIL/ ${CMAKE_CURRENT_BINARY_DIR}/LuciferIL)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../LuciferIL/ ${CMAKE_CURRENT_BINARY_DIR}/LuciferIL)
 
 
 # Build Executable
