@@ -38,7 +38,7 @@ WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> *Comp
 
 
     // Save Image
-    int BitsPP = (Image.Size * 8) / (Image.Width * Image.Height * Image.Channels);
+    int BitsPP = (Image.Size * 8) / (Image.Width * Image.Height);
     FIBITMAP* FIImage = FreeImage_Allocate(Image.Width, Image.Height, BitsPP, 0, 0, 0);
     memcpy(FreeImage_GetBits(FIImage), Image.Bytes.get(), Image.Width * Image.Height * (BitsPP / 8));
 
