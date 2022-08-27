@@ -29,5 +29,11 @@ LoadingStatus Lucifer::Load(unsigned char* ImageData, unsigned long Size, Image&
 }
 
 
+WritingStatus Lucifer::Write(Image& Image, std::unique_ptr<unsigned char> &CompressedImageData, unsigned long &Size, ImageFormat Format) {
+    return Lucifer_Write(Image, CompressedImageData, Size, Format)
+}
+
+
+
 
 }
