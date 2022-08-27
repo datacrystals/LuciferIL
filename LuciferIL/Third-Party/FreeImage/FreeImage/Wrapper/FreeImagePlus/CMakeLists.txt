@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16.2)
-project(FreeImagePlus VERSION 3.18.0)
+project(FreeImagePlus-Lucifer VERSION 3.18.0)
 
 if(WIN32)
 	# __declspec(dllexport) or __declspec(dllimport) for FreeImagePlus
