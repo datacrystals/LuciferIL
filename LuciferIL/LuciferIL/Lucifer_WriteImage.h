@@ -13,7 +13,7 @@
 
 // Internal Libs
 
-#include <LuciferIL/Lucifer_LoadingStatusEnum.h>
+#include <LuciferIL/Lucifer_WritingStatusEnum.h>
 #include <LuciferIL/Lucifer_ImageStruct.h>
 
 
