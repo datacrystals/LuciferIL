@@ -256,7 +256,7 @@ configure_file( pkgconfig/IL.pc.cmake.in
 
 
 # Installation
-install (TARGETS IL
+install (TARGETS IL-Lucifer
     ARCHIVE DESTINATION lib
     LIBRARY DESTINATION lib
     RUNTIME DESTINATION bin
