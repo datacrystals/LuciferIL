@@ -44,20 +44,30 @@ void ReadIOData(IOData& IOData, std::string Path) {
 }
 
 
+void WriteIOData(IOData &IOData, std::string Path) {
+
+    FILE *Stream = fopen(Path.c_str(), "wb");
+    fwrite(IOData.Data.get(), 1, sizeof(unsigned char) * IOData.Size, Stream);
+    fclose(Stream);
+
+}
+
+
 int main() {
 
 
     Lucifer::Lucifer Luci;
 
-    std::cout<<"Loading Image: 'Assets/Test.png' From Disk With FreeImage\n";
+    std::cout<<"Loading Image: 'Assets/Test.png' From Disk\n";
 
     IOData Data;
-    ReadIOData(Data, "Assets/Test.png");
     Lucifer::Image Image;
+
+    ReadIOData(Data, "Assets/Test.png");
     Lucifer::LoadingStatus Status = Luci.Load(Data.Data.get(), Data.Size, Image);
 
-
-
-
+    IOData NewData;
+    Luci.Write(Image, NewData.Data, Data.Size);
+    WriteIOData(NewData, "Assets/TestOutput.png");
 
 }

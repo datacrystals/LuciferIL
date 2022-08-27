@@ -8,7 +8,7 @@
 
 namespace Lucifer {
 
-WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char> &CompressedImageData, unsigned long &Size, ImageFormat Format) {
+WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> &CompressedImageData, unsigned long &Size, ImageFormat Format) {
 
     // Sanity Checks
     if (Image.Bytes.get() == nullptr) {
