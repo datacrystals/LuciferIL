@@ -64,8 +64,8 @@ struct IOData {
 void ReadIOData(IOData& IOData, std::string Path) {
 
     struct stat Buffer;
-    int FileStatus = stat(FilePath.c_str(), &Buffer);
-    FileSize = Buffer.st_size + 1;
+    int FileStatus = stat(Path.c_str(), &Buffer);
+    IOData.Size = Buffer.st_size + 1;
 
 
     IOData.Data.reset(new unsigned char[Buffer.st_size + 1]);
