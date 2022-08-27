@@ -6,5 +6,5 @@ make -j
 
 cd ..
 cd Binaries
-./Lucifer-CompileTest
+./Lucifer-WritingTest
 cd ..
