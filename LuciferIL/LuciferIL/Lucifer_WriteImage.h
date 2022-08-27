@@ -32,7 +32,7 @@ namespace Lucifer {
  * @param Format Format to save the image in
  * @return WritingStatus Status of save operation
  */
-WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> &CompressedImageData, unsigned long &Size, ImageFormat Format = Lucifer_ImageFormat_PNG);
+WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> *CompressedImageData, unsigned long &Size, ImageFormat Format = Lucifer_ImageFormat_PNG);
 
 
 };

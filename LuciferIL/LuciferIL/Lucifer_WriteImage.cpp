@@ -8,7 +8,7 @@
 
 namespace Lucifer {
 
-WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> &CompressedImageData, unsigned long &Size, ImageFormat Format) {
+WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> *CompressedImageData, unsigned long &Size, ImageFormat Format) {
 
     // Sanity Checks
     if (Image.Bytes.get() == nullptr) {
@@ -45,8 +45,8 @@ WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> &Comp
     BYTE *ImageCompressedBytes;
     FreeImage_AcquireMemory(Memory, &ImageCompressedBytes, &ImageCompressedSize);
 
-    CompressedImageData.reset(new unsigned char[ImageCompressedSize]);
-    memcpy(CompressedImageData.get(), ImageCompressedBytes, ImageCompressedSize);
+    CompressedImageData->reset(new unsigned char[ImageCompressedSize]);
+    memcpy(CompressedImageData->get(), ImageCompressedBytes, ImageCompressedSize);
     FreeImage_CloseMemory(Memory);
 
 

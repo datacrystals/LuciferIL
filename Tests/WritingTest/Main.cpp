@@ -20,7 +20,7 @@
 struct IOData {
 
     std::unique_ptr<unsigned char[]> Data;
-    unsigned long Size;
+    unsigned long Size = 0;
 };
 
 
@@ -70,7 +70,7 @@ int main() {
     std::cout<<"Writing Image: 'Assets/TestOutput.png' To Disk\n";
 
     IOData NewData;
-    Luci.Write(Image, NewData.Data, NewData.Size);
+    Luci.Write(Image, &NewData.Data, NewData.Size);
     WriteIOData(NewData, "Assets/TestOutput.png");
 
 }
