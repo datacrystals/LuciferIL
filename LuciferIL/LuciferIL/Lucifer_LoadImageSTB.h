@@ -13,10 +13,7 @@
 
 
 // External Libs
-// #include <stb_image.h>
-#ifndef LUCIFER_STB_HANDLED
-    #error "You have not yet included 'Lucifer_IncludeOnce.h' in your project. Please do so before including anything else"
-#endif
+#include <stb_image.h>
 
 // Internal Libs
 #include <LuciferIL/Lucifer_LoadingStatusEnum.h>
