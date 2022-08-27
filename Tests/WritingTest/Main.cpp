@@ -20,7 +20,7 @@
 struct IOData {
 
     std::unique_ptr<unsigned char[]> Data;
-    long Size;
+    unsigned long Size;
 };
 
 
