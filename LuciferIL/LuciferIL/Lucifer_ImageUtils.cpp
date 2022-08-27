@@ -14,5 +14,9 @@ int Lucifer_GetBitsPerPixel(Image &Image) {
 
 }
 
+FIBITMAP* Lucifer_CreateFIBitmapFromImage(Image &Image) {
+    
+}
+
 
 }
