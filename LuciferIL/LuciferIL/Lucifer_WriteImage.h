@@ -14,6 +14,7 @@
 // Internal Libs
 
 #include <LuciferIL/Lucifer_WritingStatusEnum.h>
+#include <LuciferIL/Lucifer_ImageFormatEnum.h>
 #include <LuciferIL/Lucifer_ImageStruct.h>
 
 
