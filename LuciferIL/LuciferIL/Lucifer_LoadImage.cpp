@@ -7,7 +7,7 @@
 
 namespace Lucifer {
 
-LoadingStatus Lucifer_Load(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
+LoadingStatus Lucifer_Load(unsigned char* ImageData, unsigned long &Size, Image& Image, int MaxChannels) {
 
     if (ImageData == nullptr) {
         return Lucifer_LoadingStatus_InvalidData;
