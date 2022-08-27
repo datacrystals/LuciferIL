@@ -14,7 +14,6 @@
 
 
 // Third-Party Lib
-#include <stb_image.h>
 #include <FreeImage.h>
 #include <IL/il.h>
 
