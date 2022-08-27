@@ -23,9 +23,12 @@ LoadingStatus Lucifer_LoadSTB(unsigned char* ImageData, unsigned long Size, Imag
     }
 
     // Copy Image Data
-    unsigned long ImageLength = strlen((const char*)ImageBytes);
+    int ImageLength;//= strlen((const char*)ImageBytes);
+    stbi_info_from_memory(ImageBytes, ImageLength, &Width, &Height, &Channels);
+
     Image.Bytes.reset(new unsigned char[ImageLength]);
     memcpy(Image.Bytes.get(), ImageBytes, ImageLength);
+
 
     Image.Width = Width;
     Image.Height = Height;
