@@ -33,7 +33,7 @@ void ReadIOData(IOData& IOData, std::string Path) {
 
     IOData.Data.reset(new unsigned char[Buffer.st_size + 1]);
 
-    FILE *Stream = fopen(FilePath.c_str(), "rb");
+    FILE *Stream = fopen(Path.c_str(), "rb");
 
     [[maybe_unused]]size_t _ = fread(IOData.Data.get(), sizeof(unsigned char), Buffer.st_size,Stream);
         
