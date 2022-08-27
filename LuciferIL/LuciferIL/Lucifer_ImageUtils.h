@@ -22,7 +22,13 @@
 
 namespace Lucifer {
 
-
+/**
+ * @brief Returns the number of bits per pixel for the given image
+ * 
+ * @param Image Lucifer image struct
+ * @return int Number of bits per pixel
+ */
+int Lucifer_GetBitsPerPixel(Image &Image);
 
 
 };
