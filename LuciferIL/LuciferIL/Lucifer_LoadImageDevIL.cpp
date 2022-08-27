@@ -48,13 +48,13 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long &Size, I
     // Memcpy Image Data Pointer
     unsigned long  ImageSize  = ilGetInteger(IL_IMAGE_SIZE_OF_DATA);
     unsigned char* ImageBytes = ilGetData();
-    Size = ImageSize;
 
     if (ImageBytes == nullptr) {
         ilDeleteImage(DevILImageID);
         return Lucifer_LoadingStatus_UnsupportedFormat;
     }    
 
+    Image.Size = ImageSize;
     Image.Bytes.reset(new unsigned char[ImageSize]);
     memcpy(Image.Bytes.get(), ImageBytes, ImageSize);
 

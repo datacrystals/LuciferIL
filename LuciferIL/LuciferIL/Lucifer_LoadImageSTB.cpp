@@ -30,6 +30,7 @@ LoadingStatus Lucifer_LoadSTB(unsigned char* ImageData, unsigned long Size, Imag
     Image.Width = Width;
     Image.Height = Height;
     Image.Channels = Channels;
+    Image.Size = ImageLength;
 
     stbi_image_free(ImageBytes);
     

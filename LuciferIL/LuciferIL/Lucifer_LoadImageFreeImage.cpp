@@ -7,7 +7,7 @@
 
 namespace Lucifer {
 
-LoadingStatus Lucifer_LoadFreeImage(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
+LoadingStatus Lucifer_LoadFreeImage(unsigned char* ImageData, unsigned long &Size, Image& Image, int MaxChannels) {
 
     if (ImageData == nullptr) {
         return Lucifer_LoadingStatus_InvalidData;
@@ -34,7 +34,9 @@ LoadingStatus Lucifer_LoadFreeImage(unsigned char* ImageData, unsigned long Size
         return Lucifer_LoadingStatus_UnsupportedFormat;
     }    
 
+    
     Image.Bytes.reset(new unsigned char[FreeImage_GetMemorySize(FIImage)]);
+    Image.Size = FreeImage_GetMemorySize(FIImage);
     memcpy(Image.Bytes.get(), FreeImage_GetBits(FIImage), FreeImage_GetMemorySize(FIImage));
 
     Image.Width = Width;
