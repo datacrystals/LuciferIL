@@ -7,3 +7,4 @@
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
+#define LUCIFER_STB_HANDLED
