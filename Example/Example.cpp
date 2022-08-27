@@ -62,8 +62,8 @@ int main() {
     
     // Read Into Image
     Lucifer::Image Image;
-    Lucifer::LoadingStatus Status = Luci.Load(Data.Data.get(), Data.Size, Image);
-    std::cout<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
+    Lucifer::LoadingStatus LoadStatus = Luci.Load(Data.Data.get(), Data.Size, Image);
+    std::cout<<"Image Load Returned: "<<Lucifer::Lucifer_GetLoadingStatusString(LoadStatus)<<std::endl;
 
 
 
@@ -72,7 +72,8 @@ int main() {
 
     // Write To New IOData Buffer
     IOData NewData;
-    Luci.Write(Image, &NewData.Data, NewData.Size);
+    Lucifer::WritingStatus WriteStatus = Luci.Write(Image, &NewData.Data, NewData.Size);
+    std::cout<<"Image Write Returned: "<<Lucifer::Lucifer_GetWritingStatusString(WriteStatus)<<std::endl;
 
     // Write To Disk
     WriteIOData(NewData, "Assets/TestOutput.png");
