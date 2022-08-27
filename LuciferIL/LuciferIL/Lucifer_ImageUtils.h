@@ -31,4 +31,5 @@ namespace Lucifer {
 int Lucifer_GetBitsPerPixel(Image &Image);
 
 
+
 };
