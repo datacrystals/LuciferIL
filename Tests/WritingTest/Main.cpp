@@ -11,9 +11,6 @@
 #include <stdlib.h>
 
 #include <LuciferIL/Lucifer.h>
-#include <LuciferIL/Lucifer_LoadImageSTB.h>
-#include <LuciferIL/Lucifer_LoadImageFreeImage.h>
-#include <LuciferIL/Lucifer_LoadImageDevIL.h>
 #include <LuciferIL/Lucifer_EnumToString.h>
 
 
@@ -57,99 +54,21 @@ struct ImageFileObject {
 };
 
 
-void TestLoadFreeImage(const char* Path) {
-
-    // Load Image Path
-    ImageFileObject Obj;
-    Obj.LoadImage(Path);
-
-    // Load Image Into Memory
-    std::cout<<"Loading Image Into Memory Object\n";
-    Lucifer::Image Image;
-    Lucifer::LoadingStatus Status = Lucifer::Lucifer_LoadFreeImage(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
-
-    std::cout<<"Image Loading Status Is: "<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
-
-    // List Image Information
-    std::cout<<"Image Is "<<Image.Width<<"px Wide\n";
-    std::cout<<"Image Is "<<Image.Height<<"px Tall\n";
-    std::cout<<"Image Has "<<Image.Channels<<" Color Channels\n";
-    
-    // Delete Image From buffer
-    free(Obj.MemoryBuffer);
-
-}
-
-void TestLoadSTB(const char* Path) {
-
-    // Load Image Path
-    ImageFileObject Obj;
-    Obj.LoadImage(Path);
-
-    // Load Image Into Memory
-    std::cout<<"Loading Image Into Memory Object\n";
-    Lucifer::Image Image;
-    Lucifer::LoadingStatus Status = Lucifer::Lucifer_LoadSTB(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
-
-    std::cout<<"Image Loading Status Is: "<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
-
-    // List Image Information
-    std::cout<<"Image Is "<<Image.Width<<"px Wide\n";
-    std::cout<<"Image Is "<<Image.Height<<"px Tall\n";
-    std::cout<<"Image Has "<<Image.Channels<<" Color Channels\n";
-    
-    // Delete Image From buffer
-    free(Obj.MemoryBuffer);
-
-}
-
-
-void TestLoadDevIL(const char* Path) {
-
-    // Load Image Path
-    ImageFileObject Obj;
-    Obj.LoadImage(Path);
-
-    // Load Image Into Memory
-    std::cout<<"Loading Image Into Memory Object\n";
-    Lucifer::Image Image;
-    Lucifer::LoadingStatus Status = Lucifer::Lucifer_LoadDevIL(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
-
-    std::cout<<"Image Loading Status Is: "<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
-
-    // List Image Information
-    std::cout<<"Image Is "<<Image.Width<<"px Wide\n";
-    std::cout<<"Image Is "<<Image.Height<<"px Tall\n";
-    std::cout<<"Image Has "<<Image.Channels<<" Color Channels\n";
-    
-    // Delete Image From buffer
-    free(Obj.MemoryBuffer);
-
-}
 
 
 int main() {
 
-    // Init FreeImage
-    FreeImage_Initialise();
 
-    // Load Test.png
+    Lucifer::Lucifer Luci;
+
     std::cout<<"Loading Image: 'Assets/Test.png' From Disk With FreeImage\n";
-    TestLoadFreeImage("Assets/Test.png");
-    std::cout<<"Loading Image: 'Assets/Test.png' From Disk With STB\n";
-    TestLoadSTB("Assets/Test.png");
-    std::cout<<"Loading Image: 'Assets/Test.png' From Disk With DevIL\n";
-    TestLoadDevIL("Assets/Test.png");
+    ImageFileObject Obj;
+    Obj.LoadImage("Assets/Test.png");
+    Lucifer::Image Image;
+    Lucifer::LoadingStatus Status = Luci.Load(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
 
-    // Load Test.png
-    std::cout<<"Loading Image: 'Assets/Test.jpg' From Disk With FreeImage\n";
-    TestLoadFreeImage("Assets/Test.jpg");
-    std::cout<<"Loading Image: 'Assets/Test.jpg' From Disk With STB\n";
-    TestLoadSTB("Assets/Test.jpg");
-    std::cout<<"Loading Image: 'Assets/Test.jpg' From Disk With DevIL\n";
-    TestLoadDevIL("Assets/Test.jpg");
 
-    // De-Init FreeImage
-    FreeImage_DeInitialise();
+
+
 
 }
