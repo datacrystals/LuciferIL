@@ -1,8 +1,8 @@
 mkdir Build
 
 cd Build
-cmake --target Lucifer-CompileTest ..
-make -j
+cmake ..
+cmake --build . --target Lucifer-CompileTest -j 
 
 cd ..
 cd Binaries
