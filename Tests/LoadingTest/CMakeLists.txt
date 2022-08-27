@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(Lucifer-CompileTest)
+project(Lucifer-LoadingTest)
 
 
 # Define CMake Paths
@@ -24,8 +24,8 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../LuciferIL/ ${CMAKE_CURRENT_BI
 
 
 # Build Executable
-add_executable(Lucifer-CompileTest Main.cpp)
-target_link_libraries(Lucifer-CompileTest Lucifer)
+add_executable(Lucifer-LoadingTest Main.cpp)
+target_link_libraries(Lucifer-LoadingTest Lucifer)
 
 
 # Copy Assets
