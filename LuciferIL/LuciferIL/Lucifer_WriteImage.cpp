@@ -9,9 +9,48 @@ namespace Lucifer {
 
 WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char> CompressedImageData, unsigned long Size, ImageFormat Format = Lucifer_ImageFormat_PNG) {
 
+    // Sanity Checks
+    if (Image.Bytes.get() == nullptr) {
+        return Lucifer_WritingStatus_InvalidData;
+    } else if (Image.Channels < 1 || Image.Channels > 4) {
+        return Lucifer_WritingStatus_InvalidNumChannels;
+    } else if (Image.Width < 1) {
+        return Lucifer_WritingStatus_InvalidWidth;
+    } else if (Image.Height < 1) {
+        return Lucifer_WritingStatus_InvalidHeight;
+    }
 
+
+    // Convert Formats
+    FREE_IMAGE_FORMAT FIFormat;
+    if (Format == Lucifer_ImageFormat_PNG) {
+        FIFormat = FIF_PNG;
+    } else if (Format == Lucifer_ImageFormat_JPG) {
+        FIFormat = FIF_JPEG;
+    } else if (Format == Lucifer_ImageFormat_TIFF) {
+        FIFormat = FIF_TIFF;
+    }
+
+
+
+    // Save Image
+    FIBITMAP* FIImage;
+    FIImage->data = Image.Bytes.get();
     
-    
+    FIMEMORY* Memory = FreeImage_OpenMemory();
+    FreeImage_SaveToMemory(FIFormat, FIImage, Memory);
+
+    DWORD ImageCompressedSize = 0;
+    BYTE *ImageCompressedBytes;
+    FreeImage_AcquireMemory(Memory, &ImageCompressedBytes, &ImageCompressedSize);
+
+    CompressedImageData.reset(new unsigned char[ImageCompressedSize]);
+    memcpy(CompressedImageData.get(), ImageCompressedBytes, ImageCompressedSize);
+    FreeImage_CloseMemory(Memory);
+
+
+    return Lucifer_WritingStatus_Complete;
+
 
 }
 
