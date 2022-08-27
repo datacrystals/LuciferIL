@@ -7,7 +7,7 @@
 
 namespace Lucifer {
 
-LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
+LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long &Size, Image& Image, int MaxChannels) {
 
     if (ImageData == nullptr) {
         return Lucifer_LoadingStatus_InvalidData;
@@ -48,6 +48,7 @@ LoadingStatus Lucifer_LoadDevIL(unsigned char* ImageData, unsigned long Size, Im
     // Memcpy Image Data Pointer
     unsigned long  ImageSize  = ilGetInteger(IL_IMAGE_SIZE_OF_DATA);
     unsigned char* ImageBytes = ilGetData();
+    Size = ImageSize;
 
     if (ImageBytes == nullptr) {
         ilDeleteImage(DevILImageID);
