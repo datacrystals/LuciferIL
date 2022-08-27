@@ -14,44 +14,7 @@
 #include <LuciferIL/Lucifer_EnumToString.h>
 
 
-struct ImageFileObject {
 
-    // Declare Member Variables
-    unsigned char *MemoryBuffer;
-    struct stat Buffer;
-    int Result;
-
-
-    // Load File Into Mem
-    bool LoadImage(const char* FilePath) { // Loads Image Into Memory Buffer, Returns True On Success, False On Failure
-
-        // Get File Stats
-        Result = stat(FilePath, &Buffer);
-        if (Result == 0) {
-
-            MemoryBuffer = (BYTE*)malloc(Buffer.st_size * sizeof(unsigned char));
-            if (MemoryBuffer) {
-
-                FILE *Stream = fopen(FilePath, "rb");
-                if (Stream) {
-
-                    // Read File Data
-                    fread(MemoryBuffer, sizeof(unsigned char), Buffer.st_size, Stream);
-                    fclose(Stream);
-
-                    return true;
-
-                }
-            }
-        }
-
-        // Return Fail
-        return false;
-
-    }
-
-
-};
 
 
 struct IOData {
