@@ -54,6 +54,31 @@ struct ImageFileObject {
 };
 
 
+struct IOData {
+
+    std::unique_ptr<unsigned char[]> Data;
+    long Size;
+};
+
+
+void ReadIOData(IOData& IOData, std::string Path) {
+
+    struct stat Buffer;
+    int FileStatus = stat(FilePath.c_str(), &Buffer);
+    FileSize = Buffer.st_size + 1;
+
+
+    IOData.Data.reset(new unsigned char[Buffer.st_size + 1]);
+
+    FILE *Stream = fopen(FilePath.c_str(), "rb");
+
+    [[maybe_unused]]size_t _ = fread(IOData.Data.get(), sizeof(unsigned char), Buffer.st_size,Stream);
+        
+    IOData.Data.get()[Buffer.st_size] = '\0';
+    fclose(Stream);
+
+
+}
 
 
 int main() {
@@ -62,10 +87,11 @@ int main() {
     Lucifer::Lucifer Luci;
 
     std::cout<<"Loading Image: 'Assets/Test.png' From Disk With FreeImage\n";
-    ImageFileObject Obj;
-    Obj.LoadImage("Assets/Test.png");
+
+    IOData Data;
+    ReadIOData(Data, "Assets/Test.png");
     Lucifer::Image Image;
-    Lucifer::LoadingStatus Status = Luci.Load(Obj.MemoryBuffer, Obj.Buffer.st_size, Image);
+    Lucifer::LoadingStatus Status = Luci.Load(Data.Data.get(), Data.Size, Image);
 
 
 
