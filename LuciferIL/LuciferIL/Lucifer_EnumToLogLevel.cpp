@@ -29,4 +29,27 @@ int Lucifer_GetLoadingStatusLevel(LoadingStatus Status) {
 
 }
 
+
+int Lucifer_GetWritingStatusLevel(WritingStatus Status) {
+
+    if (Status == Lucifer_WritingStatus_Complete) {
+        return 0;
+    } else if (Status == Lucifer_WritingStatus_InvalidData) {
+        return 3;
+    } else if (Status == Lucifer_WritingStatus_InvalidHeight) {
+        return 1;
+    } else if (Status == Lucifer_WritingStatus_InvalidNumChannels) {
+        return 2;
+    } else if (Status == Lucifer_WritingStatus_InvalidWidth) {
+        return 1;
+    } else if (Status == Lucifer_WritingStatus_UnsupportedFormat) {
+        return 1;
+    } else if (Status == Lucifer_WritingStatus_UnknownError) {
+        return 4;
+    }
+
+    return -1;
+
+}
+
 }
