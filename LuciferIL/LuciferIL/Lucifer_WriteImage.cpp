@@ -22,6 +22,10 @@ WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> *Comp
     }
 
 
+
+    
+
+
     // Convert Formats
     FREE_IMAGE_FORMAT FIFormat;
     if (Format == Lucifer_ImageFormat_PNG) {
@@ -33,10 +37,11 @@ WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> *Comp
     }
 
 
-
     // Save Image
-    FIBITMAP* FIImage;
-    FIImage->data = Image.Bytes.get();
+    int BitsPP = Image.Size / (Image.Width * Image.Height * Image.Channels);
+    FIBITMAP* FIImage = FreeImage_Allocate(Image.Width, Image.Height, BitsPP, 0, 0, 0);
+    memcpy( FreeImage_GetBits(FIImage), Image.Bytes.get(), Image.Size);
+
     
     FIMEMORY* Memory = FreeImage_OpenMemory();
     FreeImage_SaveToMemory(FIFormat, FIImage, Memory);
