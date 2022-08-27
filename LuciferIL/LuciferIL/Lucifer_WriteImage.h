@@ -21,6 +21,14 @@
 namespace Lucifer {
 
 
+/**
+ * @brief Saves the specified image to memory buffer passed in.
+ * 
+ * @param Image Source image to be saved to memory
+ * @param CompressedImageData Unique pointer of buffer to written to 
+ * @param Format Format to save the image in
+ * @return WritingStatus Status of save operation
+ */
 WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char> CompressedImageData, ImageFormat Format = Lucifer_ImageFormat_PNG);
 
 
