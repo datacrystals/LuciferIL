@@ -66,8 +66,11 @@ int main() {
     ReadIOData(Data, "Assets/Test.png");
     Lucifer::LoadingStatus Status = Luci.Load(Data.Data.get(), Data.Size, Image);
 
+
+    std::cout<<"Writing Image: 'Assets/TestOutput.png' To Disk\n";
+
     IOData NewData;
-    Luci.Write(Image, NewData.Data, Data.Size);
+    Luci.Write(Image, NewData.Data, NewData.Size);
     WriteIOData(NewData, "Assets/TestOutput.png");
 
 }
