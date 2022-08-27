@@ -24,7 +24,7 @@ Lucifer::~Lucifer() {
 }
 
 
-LoadingStatus Lucifer::Load(unsigned char* ImageData, unsigned long &Size, Image& Image, int MaxChannels) {
+LoadingStatus Lucifer::Load(unsigned char* ImageData, unsigned long Size, Image& Image, int MaxChannels) {
     return Lucifer_Load(ImageData, Size, Image, MaxChannels);
 }
 
