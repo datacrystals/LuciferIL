@@ -11,6 +11,7 @@
 
 // Internal Includes
 #include <LuciferIL/Lucifer_LoadingStatusEnum.h>
+#include <LuciferIL/Lucifer_WritingStatusEnum.h>
 
 
 namespace Lucifer {
@@ -23,6 +24,14 @@ namespace Lucifer {
  */
 std::string Lucifer_GetLoadingStatusString(LoadingStatus Status);
 
+
+/**
+ * @brief Converts the writing status enum into a string that can be used for logging.
+ * 
+ * @param Status Enum returned by image Writing functions.
+ * @return std::string String containing name of enum.
+ */
+std::string Lucifer_GetWritingStatusString(WritingStatus Status);
 
 
 };

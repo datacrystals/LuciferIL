@@ -63,6 +63,7 @@ int main() {
     // Read Into Image
     Lucifer::Image Image;
     Lucifer::LoadingStatus Status = Luci.Load(Data.Data.get(), Data.Size, Image);
+    std::cout<<Lucifer::Lucifer_GetLoadingStatusString(Status)<<std::endl;
 
 
 

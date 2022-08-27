@@ -29,4 +29,28 @@ std::string Lucifer_GetLoadingStatusString(LoadingStatus Status) {
 
 }
 
+
+std::string Lucifer_GetWritingStatusString(WritingStatus Status) {
+
+    if (Status == Lucifer_WritingStatus_Complete) {
+        return "Lucifer_WritingStatus_Complete";
+    } else if (Status == Lucifer_WritingStatus_InvalidData) {
+        return "Lucifer_WritingStatus_InvalidData";
+    } else if (Status == Lucifer_WritingStatus_InvalidHeight) {
+        return "Lucifer_WritingStatus_InvalidHeight";
+    } else if (Status == Lucifer_WritingStatus_InvalidNumChannels) {
+        return "Lucifer_WritingStatus_InvalidNumChannels";
+    } else if (Status == Lucifer_WritingStatus_InvalidWidth) {
+        return "Lucifer_WritingStatus_InvalidWidth";
+    } else if (Status == Lucifer_WritingStatus_UnsupportedFormat) {
+        return "Lucifer_WritingStatus_UnsupportedFormat";
+    } else if (Status == Lucifer_WritingStatus_UnknownError) {
+        return "Lucifer_WritingStatus_UnknownError";
+    }
+
+    return "Enum Case Error";
+
+}
+
+
 }
