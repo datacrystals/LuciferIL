@@ -21,6 +21,7 @@ add_library(Lucifer
 
     "LuciferIL/Lucifer_LoadingStatusEnum.cpp"
     "LuciferIL/Lucifer_WritingStatusEnum.cpp"
+    "LuciferIL/Lucifer_ImageFormatEnum.cpp"
     
     "LuciferIL/Lucifer_ImageStruct.cpp"
     
@@ -38,6 +39,7 @@ add_library(Lucifer
     
     "LuciferIL/Lucifer_LoadingStatusEnum.h"
     "LuciferIL/Lucifer_WritingStatusEnum.h"
+    "LuciferIL/Lucifer_ImageFormatEnum.h"
     
     "LuciferIL/Lucifer_ImageStruct.h"
     

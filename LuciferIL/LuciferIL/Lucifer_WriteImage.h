@@ -20,7 +20,8 @@
 namespace Lucifer {
 
 
-WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char> CompressedImageData, ImageFormat Format = Lucifer_ImageFormat_PNG);
+WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char> CompressedImageData, ImageFormat Format = Lucifer_ImageFormat_PNG,
+);
 
 
 };
