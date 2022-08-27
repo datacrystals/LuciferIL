@@ -24,7 +24,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../LuciferIL/ ${CMAKE_CURRENT_BI
 
 
 # Build Executable
-add_executable(Lucifer-WritingTest Main.cpp)
+add_executable(Lucifer-WritingTest Example.cpp)
 target_link_libraries(Lucifer-WritingTest Lucifer)
 
 
