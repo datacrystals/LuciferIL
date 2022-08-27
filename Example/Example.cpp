@@ -1,4 +1,5 @@
-// In-Memory Image Writing Test
+// Lucifer-IL Simple Usage Example
+
 
 #include <iostream>
 #include <fstream>
