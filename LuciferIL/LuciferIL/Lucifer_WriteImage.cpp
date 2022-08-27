@@ -49,12 +49,13 @@ WritingStatus Lucifer_Write(Image& Image, std::unique_ptr<unsigned char[]> *Comp
     DWORD ImageCompressedSize = 0;
     BYTE *ImageCompressedBytes;
     FreeImage_AcquireMemory(Memory, &ImageCompressedBytes, &ImageCompressedSize);
+    Size = (unsigned long)ImageCompressedSize;
+
 
     CompressedImageData->reset(new unsigned char[ImageCompressedSize]);
     memcpy(CompressedImageData->get(), ImageCompressedBytes, ImageCompressedSize);
     FreeImage_CloseMemory(Memory);
 
-    Size = (unsigned long)ImageCompressedSize;
 
 
     return Lucifer_WritingStatus_Complete;

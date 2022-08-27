@@ -71,8 +71,6 @@ int main() {
 
     IOData NewData;
     Luci.Write(Image, &NewData.Data, NewData.Size);
-
-    std::cout<<"Size: "<<NewData.Size<<std::endl;
     WriteIOData(NewData, "Assets/TestOutput.png");
 
 }
