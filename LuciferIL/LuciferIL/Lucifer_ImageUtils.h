@@ -45,7 +45,15 @@ int Lucifer_GetWidth(Image &Image);
  * @return int Height in pixels of the image
  */
 int Lucifer_GetHeight(Image &Image);
-int Lucifer_GetChannes(Image &Image)
+
+/**
+ * @brief Returns the number of channels in the image
+ * 
+ * @param Image Lucifer image struct
+ * @return int Number of channels (RGB=3, RGBA=4, etc.)
+ */
+int Lucifer_GetChannes(Image &Image);
+
 
 /**
  * @brief Copies the image into a new FIBITMAP.
