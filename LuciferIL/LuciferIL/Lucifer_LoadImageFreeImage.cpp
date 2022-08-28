@@ -40,6 +40,7 @@ LoadingStatus Lucifer_LoadFreeImage(unsigned char* ImageData, unsigned long Size
     FreeImage_Unload(Blue);
     FreeImage_Unload(Alpha);
 
+
     // Get Metadata
     int Width, Height, Line;
     Width  = FreeImage_GetWidth(FIImage);
