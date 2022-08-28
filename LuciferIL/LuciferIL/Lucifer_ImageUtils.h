@@ -30,6 +30,7 @@ namespace Lucifer {
  */
 int Lucifer_GetBitsPerPixel(Image &Image);
 
+
 /**
  * @brief Returns the width of the image from the struct
  * 

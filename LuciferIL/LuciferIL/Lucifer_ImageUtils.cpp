@@ -14,6 +14,16 @@ int Lucifer_GetBitsPerPixel(Image &Image) {
 
 }
 
+int Lucifer_GetWidth(Image &Image) {
+    return Image.Width;
+}
+int Lucifer_GetHeight(Image &Image) {
+    return Image.Height;
+}
+int Lucifer_GetChannels(Image &Image) {
+    return Image.Channels;
+}
+
 FIBITMAP* Lucifer_CreateFIBitmapFromImage(Image &Image) {
     
     // Allocate New Image
