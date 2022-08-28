@@ -22,9 +22,9 @@ LoadingStatus Lucifer_LoadSTB(unsigned char* ImageData, unsigned long Size, Imag
         return Lucifer_LoadingStatus_UnsupportedFormat;
     }
 
+
     // Copy Image Data
-    int ImageLength;//= strlen((const char*)ImageBytes);
-    stbi_info_from_memory(ImageBytes, ImageLength, &Width, &Height, &Channels);
+    int ImageLength = Width*Height*Channels;//= strlen((const char*)ImageBytes);
 
     Image.Bytes.reset(new unsigned char[ImageLength]);
     memcpy(Image.Bytes.get(), ImageBytes, ImageLength);
