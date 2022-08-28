@@ -9,11 +9,8 @@
 namespace Lucifer {
 
 int Lucifer_GetBitsPerPixel(Image &Image) {
-
-    return (Image.Size * 8) / (Image.Width * Image.Height);
-
+    return Image.BitsPerPixel;
 }
-
 int Lucifer_GetWidth(Image &Image) {
     return Image.Width;
 }
