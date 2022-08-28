@@ -20,19 +20,6 @@ struct Image {
     unsigned long Size;  /**<Number Of Bytes In Image Data*/
     std::unique_ptr<unsigned char[]> Bytes; /**<Pointer to bytes containing the image data*/
 
-
-    // /**
-    //  * @brief Handles initializing the image struct
-    //  * 
-    //  */
-    // Image();
-
-    // /**
-    //  * @brief Automatically free the image data - no manual free needed!
-    //  * 
-    //  */
-    // ~Image();
-
 };
 
 
