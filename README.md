@@ -22,7 +22,7 @@ This library was created to sastisfy the need to reliably load many different fo
 So, with this library, I'm aiming to make it easier to get these to load by stringing together a few different large image libraries to give the best chance of one of those working at decoding the image.
 
 ## What's up with the name?
-This project started out as a simple extension to DevIL, but eventually turned into something else, so I thought it would be fitting to find some other Devil related name.
+This project started out as an attempt to get DevIL to build with ERS, but eventually turned into something else, so I thought it would be fitting to find some other Devil related name.
 
 ## Issues/Bugs
 Please feel free to make use of the Issues tab.
