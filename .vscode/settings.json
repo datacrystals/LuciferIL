@@ -56,5 +56,6 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp"
     },
-    "cmake.sourceDirectory": "${workspaceFolder}/Tests/WritingTest"
+    "cmake.sourceDirectory": "${workspaceFolder}/Tests/WritingTest",
+    "cmake.configureOnOpen": false
 }

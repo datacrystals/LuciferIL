@@ -13,7 +13,7 @@ enum ImageFormat {
     Lucifer_ImageFormat_PNG,
     Lucifer_ImageFormat_JPG,
     Lucifer_ImageFormat_TIFF
-}
+};
 
 
 }
